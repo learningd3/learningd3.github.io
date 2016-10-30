@@ -1,0 +1,37 @@
+.nav {
+  border-bottom: 1px solid $smoke;
+  height: 55px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 40em) {
+  .nav {
+    height: 78px;
+    padding-right: 30px;
+  }
+}
+
+.nav-logo {
+  width: 157px;
+  float: left;
+  position: absolute;
+  left: -20px;
+  top: -11px;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-logo {
+    left: 40px;
+    width: 221px;
+    top: -15px;
+  }
+}
+
+
+.nav-links {
+  margin-top: 23px;
+}

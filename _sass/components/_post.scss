@@ -1,0 +1,20 @@
+.post {
+  margin-bottom: 20px;
+}
+
+.post-link {
+  font-weight: 400;
+  text-decoration: none;
+  color: $blue;
+}
+
+.post-meta {
+  color: $smoke-shadow;
+  float: right;
+  padding-top: 5px;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}

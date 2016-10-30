@@ -1,0 +1,40 @@
+$charcoal: #29292a;
+$blue: #267CFF;
+$smoke-dark: #64646E;
+$smoke-shadow: #abb1b5;
+$smoke: #EAEEF1;
+$red: #FF0D0D;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, helvetica, roboto, segoe ui, arial, sans-serif;
+  margin: 0;
+  color: $charcoal;
+  font-size: 1.3rem;
+  background-color: white;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.fit {
+  max-width: 100%;
+}

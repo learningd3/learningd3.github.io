@@ -1,0 +1,55 @@
+.work-header-title {
+  font-weight: 200;
+  font-size: .9em;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.work-gallery {
+  text-decoration: none;
+  transition: opacity 0.1s ease-out;
+  display: block;
+}
+
+.work-gallery:hover {
+  opacity: .9;
+}
+
+.work-label {
+  font-size: .7em;
+  color: $smoke-dark;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -3px;
+}
+
+@media (min-width: 350px) {
+  .work-header-title {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 510px) {
+  .work-header-title {
+    font-size: 1.5em;
+  }
+
+  .work-label {
+    top: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .work-header-title {
+    font-size: 2em;
+  }
+
+  .work-label  {
+    font-size: .8em;
+  }
+}
