@@ -1,5 +1,10 @@
 .post {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.post-list {
+  margin-bottom: 60px;
 }
 
 .post-link {
@@ -8,10 +13,18 @@
   color: $blue;
 }
 
-.post-meta {
+.post-list-row {
+  border-bottom: 1px solid $smoke;
+  padding: 20px 10px;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.post-list-meta {
   color: $smoke-shadow;
   float: right;
-  padding-top: 5px;
 }
 
 .post-list {

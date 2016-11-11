@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Your awesome title</title>
+  <title>Learning D3</title>
   <meta name="description" content="Master Class on learning D3.js">
   <link rel="icon" type="image/png" href=/blog/assets/img/favicon-32x32.png sizes="32x32" />
   <link rel="icon" type="image/png" href=/blog/assets/img/favicon-16x16.png sizes="16x16" />
@@ -17,26 +17,35 @@
 
   <body>
     <nav class="nav cf">
-  <a class="nav-logo pull-left " href="/blog/">
+  <a class="nav-logo pull-left " href="https://www.learningd3.com">
     <img class="nav-logo-img" src="/blog/assets/svg/logo.svg" alt="Philip Davis"/>
   </a>
   <div class="nav-links pull-right">
     <a href="https://www.learningd3.com" class="btn btn-md btn-blue btn-bold">Full Course</a>
-    <a href="/articles" class="btn btn-light-blue btn-md btn-bold">Articles</a>
+    <a href="/blog/" class="btn btn-light-blue btn-md btn-bold">Articles</a>
   </div>
 </nav>
 
     <div class="container-small">
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
+      <div class="post-list">
+  <h1 class="text-center">Articles</h1>
+  
+    <div class="post-list-row">
+      <a href="/blog/2016/10/29/welcome-to-jekyll.html" class="post-list-title">Welcome to Jekyll!</a>
+      <span class="post-list-meta">Oct 29, 2016</span>
+    </div>
+  
+</div>
+
+      <footer class="footer">
+  <h3 class="text-bold">Want a free lesson from the course?</h3>
+  <p class="text-small">If you want to understand the D3 library, and build awesome data visualizations,
+  I made a concise and comprehensive guide to learning D3.
+  If you’re curious about what a lesson looks like, enter your email and i’ll send you one for free.</p>
+</footer>
+
     </div>
 
-    <footer class="foot">
-  Master D3.js from the ground up <button class="btn btn-blue btn-md btn-bold ml1">Full Course</button>
-</footer>
 
 
     <script>

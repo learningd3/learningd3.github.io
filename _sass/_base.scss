@@ -17,6 +17,15 @@ body {
   background-color: white;
 }
 
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .8;
+}
+
 .pull-right {
   float: right;
 }
