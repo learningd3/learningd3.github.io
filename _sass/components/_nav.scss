@@ -15,7 +15,7 @@
   }
 }
 
-.nav-logo {
+.nav-logo-img {
   width: 157px;
   float: left;
   position: absolute;
@@ -24,14 +24,19 @@
 }
 
 @media screen and (min-width: 40em) {
-  .nav-logo {
+  .nav-logo-img {
     left: 40px;
     width: 221px;
     top: -15px;
   }
 }
 
-
 .nav-links {
-  margin-top: 23px;
+  margin-top: 11px;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-links {
+    margin-top: 23px;
+  }
 }

@@ -1,0 +1,17 @@
+.input {
+  padding: 6px 6px;
+  display: inline-block;
+  border-radius: 3px;
+  outline: none;
+  color: #5B6677;
+}
+
+.input-white {
+  box-shadow: inset 0px 1px 2px 0px rgba(2, 121, 194, 0.05);
+  border: 1px solid #DADEEC;
+}
+
+.input-white:focus {
+  border: 1px solid #267CFF;
+  box-shadow: 0px 0px 4px 0px rgba(2, 121, 194, 0.3);
+}

@@ -1,6 +1,61 @@
 .footer {
   border-radius: 10px;
   background-color: $blue;
-  padding: 30px 40px;
+  padding: 40px 50px;
   color: white;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .footer {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
+
+.footer-input {
+  border: none;
+  margin-left: -4px;
+  font-size: 17px;
+  &:focus {
+    box-shadow: 0 0 0 3px darken($blue, 10%);
+  }
+}
+
+.footer-free-lesson {
+  max-width: 100%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.footer-info {
+  padding-left: 0px;
+  margin-top: 15px;
+}
+
+.footer-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .footer-info {
+    padding-left: 35px;
+  }
+}
+
+.footer-text {
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-btn {
+  padding: 8px 20px;
+  margin-left: -4px;
+  background-color: darken($blue, 20%)
 }
