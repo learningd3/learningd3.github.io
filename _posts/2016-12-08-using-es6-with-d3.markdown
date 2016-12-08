@@ -4,13 +4,13 @@ title:  "Using ES6 with D3.js"
 date:   2016-12-6
 ---
 
-ES6 is the next version of Javascript, and it has some great features that you can start using with your D3.js visualizations.
+ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.
 
 ## Getting set up
-If your project doesn't use ES6 already, you'll have to set up your project to use it. You can use [https://babeljs.io](Babel) to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.
+If your project doesn't use ES6 already, you'll have to set up your project to use it. You can use [Babel](https://babeljs.io) to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.
 
 You can check out instructions on how to get it set up here.
-I recommend using the [https://babeljs.io/docs/usage/cli/](cli tool) if you are comfortable with the terminal.
+I recommend using the [cli tool](https://babeljs.io/docs/usage/cli/) if you are comfortable with the terminal.
 
 
 ## Arrow Functions
