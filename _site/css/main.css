@@ -368,7 +368,7 @@ textarea {
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff; }
+  background: #f4f6fa; }
   .highlighter-rouge .highlight {
     background: #eef; }
   .highlight .c {
@@ -1016,6 +1016,14 @@ blockquote {
 
   p, ul, li, blockquote {
     font-size: 1.2rem; } }
+figure {
+  margin: 0;
+  padding: 2px 30px;
+  border-radius: 3px; }
+
+code, pre {
+  font-family: Menlo, monospace; }
+
 .footer {
   border-radius: 10px;
   background-color: #267CFF;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Using ES6 with D3.js</title>
+  <meta name="description" content="ES6 is the next version of Javascript, and it has some great features that you can start using with your D3.js visualizations.">
+  <link rel="icon" type="image/png" href=/blog/assets/img/favicon-32x32.png sizes="32x32" />
+  <link rel="icon" type="image/png" href=/blog/assets/img/favicon-16x16.png sizes="16x16" />
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/2016/12/06/welcome-to-jekyll.html">
+</head>
+
+
+  <body>
+    <nav class="nav cf">
+  <a class="nav-logo pull-left " href="https://www.learningd3.com">
+    <img class="nav-logo-img" src="/blog/assets/svg/logo.svg" alt="Philip Davis"/>
+  </a>
+  <div class="nav-links pull-right">
+    <a href="https://www.learningd3.com" class="btn btn-md btn-blue btn-bold">Full Course</a>
+    <a href="/blog/" class="btn btn-light-blue btn-md btn-bold">Articles</a>
+  </div>
+</nav>
+
+    <div class="container-small">
+      <article class="post container-small" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content" itemprop="articleBody">
+    
+      <h1 class="post-title" itemprop="name headline">Using ES6 with D3.js</h1>
+    
+    <p>ES6 is the next version of Javascript, and it has some great features that you can start using with your D3.js visualizations.</p>
+
+<h2 id="getting-set-up">Getting set up</h2>
+<p>If your project doesn’t use ES6 already, you’ll have to set up your project to use it. You can use <a href="Babel">https://babeljs.io</a> to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.</p>
+
+<p>You can check out instructions on how to get it set up here.
+I recommend using the <a href="cli tool">https://babeljs.io/docs/usage/cli/</a> if you are comfortable with the terminal.</p>
+
+<h2 id="arrow-functions">Arrow Functions</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"y"</span><span class="p">,</span> <span class="nx">d</span> <span class="o">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">y</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span></code></pre></figure>
+
+<p>Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you need to include arguments. You can use these all over your d3 code to replace anonymous functions you use as a second parameter to the <code class="highlighter-rouge">.attr()</code> methods and in lots of other places. Anytime you normally write an anonymous function, you can replace them with the arrow function.</p>
+
+<h2 id="let-and-const">Let and const</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span></code></pre></figure>
+
+<p>Instead of using var for your variables you can be more explicit about the type of variable you want. <code class="highlighter-rouge">let</code> works the same as <code class="highlighter-rouge">var</code> but it’s block scoped, so if you use it inside an if statement, it won’t spill out. <code class="highlighter-rouge">const</code> is like <code class="highlighter-rouge">let</code> but it once it has been assigned a value it won’t let you reassign a value.</p>
+
+<h2 id="import">Import</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">scale</span> <span class="nx">from</span> <span class="s2">"d3-scale"</span></code></pre></figure>
+
+<p>One of the nice things about d3.v4.js is that it is broken up into modules. You can import modules into your js files in a way that makes more sense.</p>
+
+<h2 id="destructuring-objects">Destructuring Objects</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">{</span> <span class="nx">blue</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">;</span></code></pre></figure>
+
+<p>Destructuring an object is where you take out key value pairs from an object, assigning the name of the key to your variable, and the value, to the value of the variable. In this example i’m creating a constant named blue, that is assigned to whatever <code class="highlighter-rouge">colors.blue</code> is.</p>
+
+<h2 id="method-shorthand">Method Shorthand</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">"Hello!"</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>You can abbreviate methods. Instead of writing an anonymous function that’s assigned to a key, you can put parenthesis and a block statement.</p>
+
+<h2 id="template-strings">Template Strings</h2>
+
+<figure class="highlight"><pre><code class="language-es6" data-lang="es6">.attr("transform", `translate(${x}, ${y})`);</code></pre></figure>
+
+<p>You can insert javascript variables and expressions into strings with this handy syntax. First, make sure you use the back tick instead of the single or double quote. Whenever you just need to put a dollar sign with brackets surrounding the variable or expression. These strings can also be multi line!</p>
+
+<h2 id="default-parameters">Default Parameters</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span><span class="p">(</span><span class="nx">data</span> <span class="o">=</span> <span class="s2">"n/a"</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span></code></pre></figure>
+
+<p>You can set a function parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with a parameter set to <code class="highlighter-rouge">undefined</code> the default value will be assigned.</p>
+
+<p>There’s a more to ES6 than what I showed here but if you’re looking to get your feet wet, give these examples a try. Once you start adopting the syntax, it’s hard to go back!</p>
+
+<p>If you like this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!</p>
+
+  </div>
+</article>
+
+      <footer class="footer cf">
+  <div class="grid-2">
+    <img class="fit footer-free-lesson" src="/blog/assets/svg/free-lesson.svg" />
+  </div>
+  <div class="grid-4 footer-info">
+    <div class="footer-header">Master D3.js from the ground up</div>
+    <div class="footer-text text-small">
+      If you want to understand the D3 library, and build amazing data visualizations, I made a concise and comprehensive video course to help you learn D3.
+      <br>
+      <br>
+      <b>Sign up below and i’ll send you a free lesson</b>
+    </div>
+      <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//gmail.us12.list-manage.com/subscribe/post?u=f2b5aed612d56a7f603cfb3ec&amp;id=10fc00a98b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          	<!-- <h2 class="text-uppercase text-light text-thin text-center">Join the waiting list</h2> -->
+              <div class="row">
+                <div class="grid-4">
+                  <div class="mc-field-group">
+                  	<input placeholder="Email Address" type="email" style="width: 100%;" value="" name="EMAIL" class="required email input input-white footer-input mb1 p0" id="mce-EMAIL">
+                  </div>
+                </div>
+                <div class="grid-2">
+                  <div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display:none"></div>
+                		<div class="response" id="mce-success-response" style="display:none"></div>
+                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2b5aed612d56a7f603cfb3ec_10fc00a98b" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-green btn-borderless footer-btn btn-bold btn-md mb2"></div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+    </div>
+</footer>
+
+    </div>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-51640724-1', 'philipcdavis.com');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+
+</html>

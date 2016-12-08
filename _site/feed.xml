@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2016-11-10T19:50:33-08:00</updated><id>http://localhost:4000/blog//</id><title type="html">Learning D3</title><subtitle>Master Class on learning D3.js</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/2016/10/29/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2016-10-29T00:00:00-07:00</published><updated>2016-10-29T00:00:00-07:00</updated><id>http://localhost:4000/blog/2016/10/29/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2016/10/29/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/blog/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2016-12-07T18:16:51-08:00</updated><id>http://localhost:4000/blog//</id><title type="html">Learning D3</title><subtitle>Master Class on learning D3.js</subtitle><entry><title type="html">Using ES6 with D3.js</title><link href="http://localhost:4000/blog/2016/12/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Using ES6 with D3.js" /><published>2016-12-06T00:00:00-08:00</published><updated>2016-12-06T00:00:00-08:00</updated><id>http://localhost:4000/blog/2016/12/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2016/12/06/welcome-to-jekyll.html">&lt;p&gt;ES6 is the next version of Javascript, and it has some great features that you can start using with your D3.js visualizations.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-set-up&quot;&gt;Getting set up&lt;/h2&gt;
+&lt;p&gt;If your project doesn’t use ES6 already, you’ll have to set up your project to use it. You can use &lt;a href=&quot;Babel&quot;&gt;https://babeljs.io&lt;/a&gt; to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.&lt;/p&gt;
+
+&lt;p&gt;You can check out instructions on how to get it set up here.
+I recommend using the &lt;a href=&quot;cli tool&quot;&gt;https://babeljs.io/docs/usage/cli/&lt;/a&gt; if you are comfortable with the terminal.&lt;/p&gt;
+
+&lt;h2 id=&quot;arrow-functions&quot;&gt;Arrow Functions&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you need to include arguments. You can use these all over your d3 code to replace anonymous functions you use as a second parameter to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.attr()&lt;/code&gt; methods and in lots of other places. Anytime you normally write an anonymous function, you can replace them with the arrow function.&lt;/p&gt;
+
+&lt;h2 id=&quot;let-and-const&quot;&gt;Let and const&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Instead of using var for your variables you can be more explicit about the type of variable you want. &lt;code class=&quot;highlighter-rouge&quot;&gt;let&lt;/code&gt; works the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt; but it’s block scoped, so if you use it inside an if statement, it won’t spill out. &lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; is like &lt;code class=&quot;highlighter-rouge&quot;&gt;let&lt;/code&gt; but it once it has been assigned a value it won’t let you reassign a value.&lt;/p&gt;
+
+&lt;h2 id=&quot;import&quot;&gt;Import&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;scale&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;d3-scale&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;One of the nice things about d3.v4.js is that it is broken up into modules. You can import modules into your js files in a way that makes more sense.&lt;/p&gt;
+
+&lt;h2 id=&quot;destructuring-objects&quot;&gt;Destructuring Objects&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Destructuring an object is where you take out key value pairs from an object, assigning the name of the key to your variable, and the value, to the value of the variable. In this example i’m creating a constant named blue, that is assigned to whatever &lt;code class=&quot;highlighter-rouge&quot;&gt;colors.blue&lt;/code&gt; is.&lt;/p&gt;
+
+&lt;h2 id=&quot;method-shorthand&quot;&gt;Method Shorthand&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;sayHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello!&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can abbreviate methods. Instead of writing an anonymous function that’s assigned to a key, you can put parenthesis and a block statement.&lt;/p&gt;
+
+&lt;h2 id=&quot;template-strings&quot;&gt;Template Strings&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-es6&quot; data-lang=&quot;es6&quot;&gt;.attr(&quot;transform&quot;, `translate(${x}, ${y})`);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can insert javascript variables and expressions into strings with this handy syntax. First, make sure you use the back tick instead of the single or double quote. Whenever you just need to put a dollar sign with brackets surrounding the variable or expression. These strings can also be multi line!&lt;/p&gt;
+
+&lt;h2 id=&quot;default-parameters&quot;&gt;Default Parameters&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;n/a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can set a function parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with a parameter set to &lt;code class=&quot;highlighter-rouge&quot;&gt;undefined&lt;/code&gt; the default value will be assigned.&lt;/p&gt;
+
+&lt;p&gt;There’s a more to ES6 than what I showed here but if you’re looking to get your feet wet, give these examples a try. Once you start adopting the syntax, it’s hard to go back!&lt;/p&gt;
+
+&lt;p&gt;If you like this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!&lt;/p&gt;</content><summary type="html">ES6 is the next version of Javascript, and it has some great features that you can start using with your D3.js visualizations.</summary></entry></feed>
