@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using ES6 with D3.js"
-date:   2016-12-6
+date:   2016-12-8
 ---
 
 ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.
