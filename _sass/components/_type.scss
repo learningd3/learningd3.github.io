@@ -53,10 +53,11 @@ blockquote {
 // Code highlighting
 figure {
   margin: 0;
-  padding: 2px 30px;
+  padding: 1px 20px;
   border-radius: 3px;
 }
 
 code, pre {
   font-family: Menlo, monospace;
+  overflow-x: auto;
 }
