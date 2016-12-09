@@ -59,30 +59,29 @@
     <p>ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.</p>
 
 <h2 id="getting-set-up">Getting set up</h2>
-<p>If your project doesn’t use ES6 already, you’ll have to set up your project to use it. You can use <a href="https://babeljs.io">Babel</a> to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.</p>
+<p>If your project doesn’t use ES6 already, you’ll have to set up your project to use it. You can use <a href="https://babeljs.io">Babel</a> to compile ES6 to Javascript that works in all the browsers.</p>
 
-<p>You can check out instructions on how to get it set up here.
-I recommend using the <a href="https://babeljs.io/docs/usage/cli/">cli tool</a> if you are comfortable with the terminal.</p>
+<p>I recommend using the <a href="https://babeljs.io/docs/usage/cli/">cli tool</a> if you are comfortable with the terminal.</p>
 
 <h2 id="arrow-functions">Arrow Functions</h2>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"y"</span><span class="p">,</span> <span class="nx">d</span> <span class="o">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">y</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span></code></pre></figure>
 
-<p>Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that <code class="highlighter-rouge">this</code> might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. <code class="highlighter-rouge">d3.select(this)</code>) you will need to use a normal anonymous function.</p>
+<p>Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that Javascript’s <code class="highlighter-rouge">this</code> might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. <code class="highlighter-rouge">d3.select(this)</code>) you will need to use a normal anonymous function.</p>
 
 <h2 id="let-and-const">let and const</h2>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 <span class="kr">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span></code></pre></figure>
 
-<p>Instead of using var for your variables you can be more explicit about the type of variable you want. <code class="highlighter-rouge">let</code> works the same as <code class="highlighter-rouge">var</code> but it’s block scoped, so if you use it inside an if statement, it won’t be accessible outside the block. <code class="highlighter-rouge">const</code> is like <code class="highlighter-rouge">let</code> but it once it has been assigned a value it can’t be reassigned.</p>
+<p>Instead of using <code class="highlighter-rouge">var</code> for variables you can be more explicit about the type of variable you want. <code class="highlighter-rouge">let</code> works the same as <code class="highlighter-rouge">var</code> but it’s block scoped. If you use it inside an <code class="highlighter-rouge">if</code> statement, it won’t be accessible outside the block. <code class="highlighter-rouge">const</code> is like <code class="highlighter-rouge">let</code> but it once it has been assigned a value it can’t be reassigned.</p>
 
 <h2 id="import">Import</h2>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">scale</span> <span class="nx">from</span> <span class="s2">"d3-scale"</span></code></pre></figure>
 
-<p>One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don’t export a default object, you’ll need to use this star syntax. Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.</p>
+<p>One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don’t export a default object, you’ll need to use this star syntax to import everything. Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.</p>
 
 <h2 id="destructuring">Destructuring</h2>
 
@@ -110,7 +109,7 @@ I recommend using the <a href="https://babeljs.io/docs/usage/cli/">cli tool</a> 
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span><span class="p">(</span><span class="nx">data</span> <span class="o">=</span> <span class="s2">"n/a"</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span></code></pre></figure>
 
-<p>You can set a function parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with a parameter set to <code class="highlighter-rouge">undefined</code> the default value will be assigned.</p>
+<p>You can set a parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with the parameter set to <code class="highlighter-rouge">undefined</code> the default value will be assigned.</p>
 
 <p>There’s a lot more to ES6 than what I showed here but if you’re looking to get started, give these examples a try. Once you start using the new syntax, it’s hard to go back!</p>
 
