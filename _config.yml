@@ -13,20 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Learning D3
-email: learningd3js@gmail.com
-description: Build data visualizations on your own terms
+
 baseurl: /blog # the subpath of your site, e.g. /blog
-url: https://learningd3.com # the base hostname & protocol for your site, e.g. http://example.com
-twitter:
-  username: philipcdavis
-
-
-# Build settings
-markdown: kramdown
-exclude:
-  - Gemfile
-  - Gemfile.lock
-
+url: http://learningd3.com # the base hostname & protocol for your site, e.g. http://example.com
 gems:
   - jekyll-seo-tag
