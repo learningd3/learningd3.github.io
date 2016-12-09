@@ -23,7 +23,7 @@ I recommend using the [cli tool](https://babeljs.io/docs/usage/cli/) if you are 
 
 Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don't need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that Javascript's `this` might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. `d3.select(this)`) you will need to use a normal anonymous function.
 
-## let and const
+## Let and Const
 {% highlight javascript %}
 let x = 10;
 const y = 20;
