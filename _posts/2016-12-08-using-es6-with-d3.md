@@ -36,7 +36,7 @@ Instead of using `var` for variables you can be more explicit about the type of 
 import * as scale from "d3-scale"
 {% endhighlight %}
 
-One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don't export a default object, you'll need to use this star syntax to import everything. Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.
+One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don't export a default object, you'll need to use this star syntax to import everything in the module ([HT Mike](https://twitter.com/mbostock/status/806878389663506432)). Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.
 
 ## Destructuring
 {% highlight javascript %}
