@@ -18,8 +18,8 @@ email: learningd3js@gmail.com
 description: "Build data visualizations on your own terms"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://learningd3.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: philipcdavis
-github_username:  philipcdavis
+twitter:
+  username: philipcdavis
 permalink: :title/
 
 # Build settings
