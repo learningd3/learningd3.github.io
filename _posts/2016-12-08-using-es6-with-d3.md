@@ -10,9 +10,8 @@ description: "ES6 is an important update to Javascript, and it has some great fe
 ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.
 
 ## Getting set up
-If your project doesn't use ES6 already, you'll have to set up your project to use it. You can use [Babel](https://babeljs.io) to compile your ES6 ready JavaScript to JavaScript that works in all the browsers.
+If your project doesn't use ES6 already, you'll have to set up your project to use it. You can use [Babel](https://babeljs.io) to compile ES6 to Javascript that works in all the browsers.
 
-You can check out instructions on how to get it set up here.
 I recommend using the [cli tool](https://babeljs.io/docs/usage/cli/) if you are comfortable with the terminal.
 
 
@@ -22,7 +21,7 @@ I recommend using the [cli tool](https://babeljs.io/docs/usage/cli/) if you are 
 .attr("x", (d, i) => i * 10)
 {% endhighlight %}
 
-Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don't need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that `this` might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. `d3.select(this)`) you will need to use a normal anonymous function.
+Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don't need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that Javascript's `this` might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. `d3.select(this)`) you will need to use a normal anonymous function.
 
 ## let and const
 {% highlight javascript %}
@@ -30,14 +29,14 @@ let x = 10;
 const y = 20;
 {% endhighlight %}
 
-Instead of using var for your variables you can be more explicit about the type of variable you want. `let` works the same as `var` but it's block scoped, so if you use it inside an if statement, it won't be accessible outside the block. `const` is like `let` but it once it has been assigned a value it can't be reassigned.
+Instead of using `var` for variables you can be more explicit about the type of variable you want. `let` works the same as `var` but it's block scoped. If you use it inside an `if` statement, it won't be accessible outside the block. `const` is like `let` but it once it has been assigned a value it can't be reassigned.
 
 ## Import
 {% highlight javascript %}
 import * as scale from "d3-scale"
 {% endhighlight %}
 
-One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don't export a default object, you'll need to use this star syntax. Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.
+One of the nice things about d3.v4.js is that it is broken up into modules. Because D3 modules don't export a default object, you'll need to use this star syntax to import everything. Importing D3 as modules is especially useful if you are using D3.js in the context of a larger application.
 
 ## Destructuring
 {% highlight javascript %}
@@ -69,7 +68,7 @@ You can insert javascript variables and expressions into strings with template s
 function(data = "n/a") { }
 {% endhighlight %}
 
-You can set a function parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with a parameter set to `undefined` the default value will be assigned.
+You can set a parameters default value by adding an equal sign and then the value you want as the default. If the function is called without the parameter, or with the parameter set to `undefined` the default value will be assigned.
 
 There's a lot more to ES6 than what I showed here but if you're looking to get started, give these examples a try. Once you start using the new syntax, it's hard to go back!
 
