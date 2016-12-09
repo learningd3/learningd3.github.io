@@ -29,7 +29,7 @@ let x = 10;
 const y = 20;
 {% endhighlight %}
 
-Instead of using `var` for variables you can be more explicit about the type of variable you want. `let` works the same as `var` but it's block scoped. If you use it inside an `if` statement, it won't be accessible outside the block. `const` is like `let` but it once it has been assigned a value it can't be reassigned.
+Instead of using `var` for variables you can be more explicit about the type of variable you want. `let` works the same as `var` but it's block scoped. If you use it inside an `if` statement, it won't be accessible outside the block. `const` is like `let` but once it has been assigned a value it can't be reassigned.
 
 ## Import
 {% highlight javascript %}
