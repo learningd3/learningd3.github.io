@@ -4,7 +4,11 @@ layout: default
 
 <article class="post container-small" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
-    {% if page.title %}
+
+    {% if page.header-img %}
+    <img class="fit mb4" src="{{site.baseurl}}/assets/img/posts/{{page.header-img}}" alt="{{page.header-img}}" />
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    {% elsif page.title %}
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     {% endif %}
     {{ content }}

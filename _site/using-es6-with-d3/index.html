@@ -28,8 +28,10 @@
     <div class="container-small">
       <article class="post container-small" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
+
     
-      <h1 class="post-title" itemprop="name headline">Using ES6 with D3.js</h1>
+    <img class="fit mb4" src="/blog/assets/img/posts/es6-d3.jpg" alt="es6-d3.jpg" />
+    <h1 class="post-title" itemprop="name headline">Using ES6 with D3.js</h1>
     
     <p>ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.</p>
 
@@ -44,7 +46,7 @@ I recommend using the <a href="https://babeljs.io/docs/usage/cli/">cli tool</a> 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"y"</span><span class="p">,</span> <span class="nx">d</span> <span class="o">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">y</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="p">(</span><span class="nx">d</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span></code></pre></figure>
 
-<p>Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function.</p>
+<p>Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don’t need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that <code class="highlighter-rouge">this</code> might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. <code class="highlighter-rouge">d3.select(this)</code>) you will need to use a normal anonymous function.</p>
 
 <h2 id="let-and-const">let and const</h2>
 
@@ -77,7 +79,7 @@ I recommend using the <a href="https://babeljs.io/docs/usage/cli/">cli tool</a> 
 
 <h2 id="template-strings">Template Strings</h2>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="err">`</span><span class="nx">translate</span><span class="p">(</span><span class="nx">$</span><span class="p">{</span><span class="nx">x</span><span class="p">},</span> <span class="nx">$</span><span class="p">{</span><span class="nx">y</span><span class="p">})</span><span class="err">`</span><span class="p">);</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">`translate(</span><span class="p">${</span><span class="nx">x</span><span class="p">}</span><span class="s2">, </span><span class="p">${</span><span class="nx">y</span><span class="p">}</span><span class="s2">)`</span><span class="p">);</span></code></pre></figure>
 
 <p>You can insert javascript variables and expressions into strings with template strings. First, make sure you use the back ticks instead of the single or double quote. Whenever you just need to execute javascript, put a dollar sign with brackets surrounding the variable or expression. These strings can also be multi line!</p>
 

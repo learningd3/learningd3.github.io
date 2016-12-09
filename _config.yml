@@ -15,11 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 title: Learning D3
 email: learningd3js@gmail.com
-description: "Master Class on learning D3.js"
+description: "Build data visualizations on your own terms"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://learningd3.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: philipcdavis
+github_username:  philipcdavis
 permalink: :title/
 
 # Build settings
@@ -27,3 +27,6 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+gems:
+  - jekyll-seo-tag

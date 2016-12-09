@@ -2,6 +2,9 @@
 layout: post
 title:  "Using ES6 with D3.js"
 date:   2016-12-8
+header-img: "es6-d3.jpg"
+image: {{site.baseurl}}/assets/img/posts/es6-d3.jpg
+description: "ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations."
 ---
 
 ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations.
@@ -19,7 +22,7 @@ I recommend using the [cli tool](https://babeljs.io/docs/usage/cli/) if you are 
 .attr("x", (d, i) => i * 10)
 {% endhighlight %}
 
-Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don't need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function.
+Arrow Functions provide a shorter syntax for writing anonymous functions in JavaScript. If you have one argument you don't need to include parenthesis. If you you have 0 or 2+ arguments you will need to include parenthesis. Anytime you normally write an anonymous function, you can replace them with the arrow function. One caveat is that `this` might not work the way you expect when using arrow functions. If you need to reference the element inside the function (e.g. `d3.select(this)`) you will need to use a normal anonymous function.
 
 ## let and const
 {% highlight javascript %}
@@ -55,7 +58,7 @@ Destructuring is a useful way of extracting data from objects and arrays. In thi
 You can abbreviate methods in ES6. Instead of writing an anonymous function that's assigned to a key, you can put parenthesis and a block statement around a method name.
 
 ## Template Strings
-{% highlight javascript %}
+{% highlight txt %}
 .attr("transform", `translate(${x}, ${y})`);
 {% endhighlight %}
 
