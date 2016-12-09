@@ -3,7 +3,7 @@ layout: post
 title:  "Using ES6 with D3.js"
 date:   2016-12-8
 header-img: "es6-d3.jpg"
-image: {{site.baseurl}}/assets/img/posts/es6-d3.jpg
+image: /assets/img/posts/es6-d3.jpg
 description: "ES6 is an important update to Javascript, and it has some great features that you can start using with your D3.js visualizations."
 ---
 
