@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Dec 2016 10:39:16 -0600</pubDate>
-    <lastBuildDate>Tue, 20 Dec 2016 10:39:16 -0600</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 11:30:42 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 11:30:42 -0600</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -50,7 +50,7 @@ In addition, you might prevent those who are color blind from understanding what
 &lt;p&gt;&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/color/color-brewer.png&quot; alt=&quot;Photo of Color Brewer&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you’re interested in exploring these concepts further, there’s a lesson in my D3.js course on design principles.
-In the lesson, I cover using color and typography in your data visualizations.&lt;/p&gt;
+In the lesson, I cover how to use color and typography in your data visualizations.&lt;/p&gt;
 
 &lt;p&gt;If you’re interested in learning D3.js, you can learn more about the course &lt;a href=&quot;https://learningd3.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>

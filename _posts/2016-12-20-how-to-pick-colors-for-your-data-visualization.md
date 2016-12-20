@@ -43,6 +43,6 @@ I especially want to highlight Color Brewer. It's a fantastic resource that allo
 <img class="fit" src="{{site.baseurl}}/assets/img/posts/color/color-brewer.png" alt="Photo of Color Brewer" />
 
 If you're interested in exploring these concepts further, there's a lesson in my D3.js course on design principles.
-In the lesson, I cover using color and typography in your data visualizations.
+In the lesson, I cover how to use color and typography in your data visualizations.
 
 If you're interested in learning D3.js, you can learn more about the course [here](https://learningd3.com/).
