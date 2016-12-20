@@ -3,10 +3,10 @@
   <channel>
     <title>Learning D3</title>
     <description>Build data visualizations on your own terms</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Dec 2016 10:31:17 -0600</pubDate>
-    <lastBuildDate>Tue, 20 Dec 2016 10:31:17 -0600</lastBuildDate>
+    <link>https://learningd3.com/blog/</link>
+    <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Dec 2016 10:39:16 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 10:39:16 -0600</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -55,8 +55,8 @@ In the lesson, I cover using color and typography in your data visualizations.&l
 &lt;p&gt;If you’re interested in learning D3.js, you can learn more about the course &lt;a href=&quot;https://learningd3.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Dec 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</guid>
+        <link>https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</guid>
         
         
       </item>
@@ -123,8 +123,8 @@ In the lesson, I cover using color and typography in your data visualizations.&l
 &lt;p&gt;If you liked this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/blog/using-es6-with-d3/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/using-es6-with-d3/</guid>
+        <link>https://learningd3.com/blog/using-es6-with-d3/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/using-es6-with-d3/</guid>
         
         
       </item>
