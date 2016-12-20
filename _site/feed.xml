@@ -3,11 +3,63 @@
   <channel>
     <title>Learning D3</title>
     <description>Build data visualizations on your own terms</description>
-    <link>https://learningd3.com/blog/</link>
-    <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Dec 2016 09:00:15 -0800</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2016 09:00:15 -0800</lastBuildDate>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Dec 2016 10:31:17 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 10:31:17 -0600</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>How to Pick Colors for Your Data Visualizations</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Position is everything, color is difficult - Moritz Stefaner&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Choosing colors for a data visualization is hard.
+Do it wrong, and it can lead to confusion and misinterpretation.&lt;/p&gt;
+
+&lt;p&gt;Color can seem like a purely decorative attribute of a data visualization.
+Picking colors may seem like a totally subjective matter.&lt;/p&gt;
+
+&lt;p&gt;It isn’t. It’s a skill that you can get better at.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-makes-color-hard&quot;&gt;What makes color hard&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Colors are often misinterpreted.&lt;/strong&gt;
+Colors can have different associations in different cultures.
+In the U.S. the color red is associated with danger, warnings, and errors.
+In China, red symbolizes prosperity and luck.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Colors can be hard to distinguish from one another.&lt;/strong&gt;
+If you have colors of similar hue, it can be difficult to tell them apart.
+In addition, you might prevent those who are color blind from understanding what you are communicating.&lt;/p&gt;
+
+&lt;p&gt;Use color sparingly, and try to discover creative methods of differentiating or grouping elements. Positioning elements is often a better way of doing this.&lt;/p&gt;
+
+&lt;h2 id=&quot;finding-good-color-palettes&quot;&gt;Finding Good Color Palettes&lt;/h2&gt;
+&lt;p&gt;There are lots of good color palette generators. Here are a few that i’ve used:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://colorbrewer2.org/&quot;&gt;Color Brewer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://color.adobe.com/&quot;&gt;Adobe Color&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lolcolors.com/&quot;&gt;lolcolors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.colorhunt.co/&quot;&gt;Colorhunt&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I especially want to highlight Color Brewer. It’s a fantastic resource that allows you to use up to 12 colors from each palette. Many of the beautiful D3.js choropleth maps use Color Brewer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/color/color-brewer.png&quot; alt=&quot;Photo of Color Brewer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in exploring these concepts further, there’s a lesson in my D3.js course on design principles.
+In the lesson, I cover using color and typography in your data visualizations.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in learning D3.js, you can learn more about the course &lt;a href=&quot;https://learningd3.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Dec 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Using ES6 with D3.js</title>
@@ -70,9 +122,9 @@
 
 &lt;p&gt;If you liked this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 08 Dec 2016 00:00:00 -0800</pubDate>
-        <link>https://learningd3.com/blog/using-es6-with-d3/</link>
-        <guid isPermaLink="true">https://learningd3.com/blog/using-es6-with-d3/</guid>
+        <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/blog/using-es6-with-d3/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/using-es6-with-d3/</guid>
         
         
       </item>
