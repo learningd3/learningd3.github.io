@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Dec 2016 14:36:55 -0600</pubDate>
-    <lastBuildDate>Wed, 28 Dec 2016 14:36:55 -0600</lastBuildDate>
+    <pubDate>Wed, 28 Dec 2016 14:42:02 -0600</pubDate>
+    <lastBuildDate>Wed, 28 Dec 2016 14:42:02 -0600</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -36,14 +36,9 @@ d3.&lt;strong&gt;csv&lt;/strong&gt;(&lt;em&gt;url[[, row], callback]&lt;/em&gt;)
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;understand-whats-actually-happening&quot;&gt;Understand what’s actually happening&lt;/h3&gt;
-&lt;p&gt;You will inevitable get stuck as you get better at D3
-Get into the habit of going to the docs first.
-Make sure you understand the purpose of the methods you trying to use.
-You might be surprised to find that these methods are more powerful then you expected.&lt;/p&gt;
+&lt;p&gt;You will inevitable get stuck as you get better at D3. Get into the habit of going to the docs first. Make sure you understand the purpose of the methods you trying to use. You might be surprised to find that these methods are more powerful then you expected.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in learning more about D3, I made something for you.
-It’s a comprehensive and concise course for learning the D3.js library.
-You can learn more about it &lt;a href=&quot;https://learningd3.com&quot;&gt;here&lt;/a&gt;, or sign up for a free lesson below.&lt;/p&gt;
+&lt;p&gt;If you’re interested in learning more about D3, I made something for you. It’s a comprehensive and concise course for learning the D3.js library. You can learn more about it &lt;a href=&quot;https://learningd3.com&quot;&gt;here&lt;/a&gt;, or sign up for a free lesson below.&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Dec 2016 00:00:00 -0600</pubDate>
         <link>https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/</link>
