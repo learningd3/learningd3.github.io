@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Getting the Most out of the D3.js Documentation - Learning D3</title>
+<meta property="og:title" content="Getting the Most out of the D3.js Documentation" />
+<meta name="description" content="The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of." />
+<meta property="og:description" content="The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of." />
+<link rel="canonical" href="https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/" />
+<meta property="og:url" content="https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/" />
+<meta property="og:site_name" content="Learning D3" />
+<meta property="og:image" content="https://learningd3.com/blog/assets/img/posts/reading-the-d3-docs.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-12-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@philipcdavis" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Getting the Most out of the D3.js Documentation",
+"image": "https://learningd3.com/blog/assets/img/posts/reading-the-d3-docs.jpg",
+"datePublished": "2016-12-28T00:00:00-06:00",
+"description": "The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of.",
+"url": "https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <title>Getting the Most out of the D3.js Documentation</title>
+  <meta name="description" content="The D3 docs are one of the best ways to solve a problem you are encountering and learn about areas in D3 that you were unaware of. This post explains the bas...">
+  <link rel="icon" type="image/ico" href=/blog/assets/img/favicon.ico />
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="canonical" href="/blog/getting-the-most-out-of-the-d3-docs/">
+  <link rel="alternate" type="application/rss+xml" title="Learning D3" href="https://learningd3.com/blog/feed.xml">
+</head>
+
+
+  <body>
+    <nav class="nav cf">
+  <a class="nav-logo pull-left " href="https://www.learningd3.com">
+    <img class="nav-logo-img" src="/blog/assets/svg/logo.svg" alt="Philip Davis"/>
+  </a>
+  <div class="nav-links pull-right">
+    <a href="https://www.learningd3.com" class="btn btn-md btn-blue btn-bold">Full Course</a>
+    <a href="/blog/" class="btn btn-light-blue btn-md btn-bold">Articles</a>
+  </div>
+</nav>
+
+    <div class="container-small">
+      <article class="post container-small" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content" itemprop="articleBody">
+
+    
+    <img class="fit mb4" src="/blog/assets/img/posts/reading-the-d3-docs.jpg" alt="reading-the-d3-docs.jpg" />
+    <h1 class="post-title" itemprop="name headline">Getting the Most out of the D3.js Documentation</h1>
+    
+    <p>The D3 docs are one of the best ways to solve a problem you are encountering and learn about areas in D3 that you were unaware of. This post explains the basic conventions that are used in the D3 documentation. Let’s look at three examples from the <a href="https://github.com/d3/d3/blob/master/API.md">API</a>.
+<br />
+<br />
+<br />
+d3.<strong>selectAll</strong>(<em>selector</em>)</p>
+
+<p>In this example, the selectAll method is being explained.
+Notice that the selectAll method is attached to the <code class="highlighter-rouge">d3</code> namespace. If the method being explained is not
+attached to the <code class="highlighter-rouge">d3</code> namespace, the object it is attached to will be specified. The italicized word (<code class="highlighter-rouge">selector</code> in this case) is a description of the parameter
+passed to the method.
+<br />
+<br />
+<br />
+selection.<strong>property</strong>(<em>name[, value]</em>)</p>
+
+<p>While it might look like an array, parameters inside brackets (<code class="highlighter-rouge">value</code> in this case) signify an <strong>optional</strong> parameter. The comma included inside the bracket reinforces that idea.
+<br />
+<br />
+<br />
+d3.<strong>csv</strong>(<em>url[[, row], callback]</em>)</p>
+
+<p>Here we have a required parameter <code class="highlighter-rouge">url</code> and two optional parameters <code class="highlighter-rouge">accessor</code> and <code class="highlighter-rouge">callback</code>. In this case, if you provide two parameters to the <code class="highlighter-rouge">.csv</code> method, they will be the url and the callback. However, if you provide 3 parameters, the second will be the accessor parameter, not the callback parameter.
+<br />
+<br /></p>
+<h3 id="understand-whats-actually-happening">Understand what’s actually happening</h3>
+<p>You will inevitable get stuck as you get better at D3
+Get into the habit of going to the docs first.
+Make sure you understand the purpose of the methods you trying to use.
+You might be surprised to find that these methods are more powerful then you expected.</p>
+
+<p>If you’re interested in learning more about D3, I made something for you.
+It’s a comprehensive and concise course for learning the D3.js library.
+You can learn more about it <a href="https://learningd3.com">here</a>, or sign up for a free lesson below.</p>
+
+  </div>
+</article>
+
+      <footer class="footer cf">
+  <div class="grid-2">
+    <img class="fit footer-free-lesson" src="/blog/assets/svg/free-lesson.svg" />
+  </div>
+  <div class="grid-4 footer-info">
+    <div class="footer-header">Master D3.js from the ground up</div>
+    <div class="footer-text text-small">
+      If you want to understand the D3 library, and build amazing data visualizations, I made a concise and comprehensive video course to help you learn D3.
+      <br>
+      <br>
+      <b>Sign up below and i’ll send you a free lesson</b>
+    </div>
+      <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//gmail.us12.list-manage.com/subscribe/post?u=f2b5aed612d56a7f603cfb3ec&amp;id=10fc00a98b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          	<!-- <h2 class="text-uppercase text-light text-thin text-center">Join the waiting list</h2> -->
+              <div class="row">
+                <div class="grid-4">
+                  <div class="mc-field-group">
+                  	<input placeholder="Email Address" type="email" style="width: 100%;" value="" name="EMAIL" class="required email input input-white footer-input mb1 p0" id="mce-EMAIL">
+                  </div>
+                </div>
+                <div class="grid-2">
+                  <div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display:none"></div>
+                		<div class="response" id="mce-success-response" style="display:none"></div>
+                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2b5aed612d56a7f603cfb3ec_10fc00a98b" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-green btn-borderless footer-btn btn-bold btn-md mb2"></div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+    </div>
+</footer>
+
+    </div>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74935564-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+
+</html>
