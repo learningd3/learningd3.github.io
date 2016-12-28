@@ -32,6 +32,6 @@ Here we have a required parameter `url` and two optional parameters `accessor` a
 <br>
 <br>
 ### Understand what's actually happening
-You will inevitable get stuck as you get better at D3. Get into the habit of going to the docs first. Make sure you understand the purpose of the methods you trying to use. You might be surprised to find that these methods are more powerful then you expected.
+You will inevitably get stuck as you get better at D3. Get into the habit of going to the docs first. Make sure you understand the purpose of the methods you trying to use. You might be surprised to find that these methods are more powerful then you expected.
 
 If you're interested in learning more about D3, I made something for you. It's a comprehensive and concise course for learning the D3.js library. You can learn more about it [here](https://learningd3.com), or sign up for a free lesson below.
