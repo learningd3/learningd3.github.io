@@ -5,9 +5,45 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Dec 2016 14:53:14 -0600</pubDate>
-    <lastBuildDate>Wed, 28 Dec 2016 14:53:14 -0600</lastBuildDate>
+    <pubDate>Tue, 10 Jan 2017 08:16:18 -0800</pubDate>
+    <lastBuildDate>Tue, 10 Jan 2017 08:16:18 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Onboarding Your Team to use D3.js</title>
+        <description>&lt;p&gt;If you work on a large team, one of the hurdles you will run into is getting someone up to speed with team workflows. One reason you might feel nervous about using D3 is the learning curve. The learning curve for D3 is probably given more credit than it’s due, but it is true that learning D3 requires some time. Here are some things you can do to onboard new team members.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-conventions&quot;&gt;Create Conventions&lt;/h2&gt;
+&lt;p&gt;Don’t let your new teammate come in blind. Create guidelines and best practices that they can apply when they join. Writing these out will help you understand some of the best practices that otherwise wouldn’t be formally stated. Additionally, guidelines set a precedent that you care about the quality of your team’s code. The guidelines themselves are highly dependent on the larger context of what your team is building, but here are a few  possible questions you may want to anticipate.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;How do I build visualizations using the front end framework we are using?&lt;/li&gt;
+  &lt;li&gt;Where should our visualization components live?&lt;/li&gt;
+  &lt;li&gt;How should team members use D3.js examples? How much copy and paste code is allowed?&lt;/li&gt;
+  &lt;li&gt;What’s the process for extending a visualization?&lt;/li&gt;
+  &lt;li&gt;What are the reusable components we can use with our visualizations?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;delegate-one-visualization-at-a-time&quot;&gt;Delegate one visualization at a time&lt;/h2&gt;
+&lt;p&gt;Getting thrown into a new team with new tools can be pretty daunting. One approach I’ve found to be helpful is to &lt;strong&gt;give recent hires responsibility for one visualization type&lt;/strong&gt;. Once they demonstrate a sufficient level of understanding and ownership you can give another.&lt;/p&gt;
+
+&lt;p&gt;If you pile the responsibility of learning multiple visualizations at once, people will look for easier solutions, often at the expense of D3’s flexibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;invest-into-training&quot;&gt;Invest into Training&lt;/h2&gt;
+&lt;p&gt;I’m a big believer that D3 is a skill worth investing into. It’s why I created &lt;a href=&quot;https://www.learningd3.com&quot;&gt;Learning D3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One suggestion for teams is to &lt;strong&gt;have at least one person become the designated trainer&lt;/strong&gt;. The trainers job is to get new hires &lt;strong&gt;up to speed&lt;/strong&gt;, to teach the basics of D3, and assign visualizations as they get started.&lt;/p&gt;
+
+&lt;p&gt;Teaching something is a great way to make sure you understand it yourself, and it allows you to fill in the holes of your understanding. Equipping your team to learn how to teach is going to reap dividends down the line. If they can explain the concepts clearly, you can bet they will be able to solve the hairy problems that pop up when building visualizations.&lt;/p&gt;
+
+&lt;p&gt;If you don’t have someone on your team who can teach D3, consider investing into your teams education. I’ve created a course that’s meant to get you up to speed with D3.js. It’s a no fluff way to learn the framework. You can find it &lt;a href=&quot;https://www.learningd3.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 -0800</pubDate>
+        <link>https://learningd3.com/blog/onboarding-your-team-to-use-d3/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/onboarding-your-team-to-use-d3/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Getting the Most out of the D3.js Documentation</title>
@@ -40,7 +76,7 @@ d3.&lt;strong&gt;csv&lt;/strong&gt;(&lt;em&gt;url[[, row], callback]&lt;/em&gt;)
 
 &lt;p&gt;If you’re interested in learning more about D3, I made something for you. It’s a comprehensive and concise course for learning the D3.js library. You can learn more about it &lt;a href=&quot;https://learningd3.com&quot;&gt;here&lt;/a&gt;, or sign up for a free lesson below.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 28 Dec 2016 00:00:00 -0600</pubDate>
+        <pubDate>Wed, 28 Dec 2016 00:00:00 -0800</pubDate>
         <link>https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/</link>
         <guid isPermaLink="true">https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/</guid>
         
@@ -92,7 +128,7 @@ In the lesson, I cover how to use color and typography in your data visualizatio
 
 &lt;p&gt;If you’re interested in learning D3.js, you can learn more about the course &lt;a href=&quot;https://learningd3.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 20 Dec 2016 00:00:00 -0600</pubDate>
+        <pubDate>Tue, 20 Dec 2016 00:00:00 -0800</pubDate>
         <link>https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</link>
         <guid isPermaLink="true">https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</guid>
         
@@ -160,7 +196,7 @@ In the lesson, I cover how to use color and typography in your data visualizatio
 
 &lt;p&gt;If you liked this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 08 Dec 2016 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 08 Dec 2016 00:00:00 -0800</pubDate>
         <link>https://learningd3.com/blog/using-es6-with-d3/</link>
         <guid isPermaLink="true">https://learningd3.com/blog/using-es6-with-d3/</guid>
         

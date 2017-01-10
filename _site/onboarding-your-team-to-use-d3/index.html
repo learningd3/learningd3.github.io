@@ -6,34 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Getting the Most out of the D3.js Documentation - Learning D3</title>
-<meta property="og:title" content="Getting the Most out of the D3.js Documentation" />
+<title>Onboarding Your Team to use D3.js - Learning D3</title>
+<meta property="og:title" content="Onboarding Your Team to use D3.js" />
 <meta name="description" content="The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of." />
 <meta property="og:description" content="The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of." />
-<link rel="canonical" href="https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/" />
-<meta property="og:url" content="https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/" />
+<link rel="canonical" href="https://learningd3.com/blog/onboarding-your-team-to-use-d3/" />
+<meta property="og:url" content="https://learningd3.com/blog/onboarding-your-team-to-use-d3/" />
 <meta property="og:site_name" content="Learning D3" />
-<meta property="og:image" content="https://learningd3.com/blog/assets/img/posts/reading-the-d3-docs.jpg" />
+<meta property="og:image" content="https://learningd3.com/blog/assets/img/posts/onboarding-your-team.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-12-28T00:00:00-08:00" />
+<meta property="article:published_time" content="2017-01-10T00:00:00-08:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@philipcdavis" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "Getting the Most out of the D3.js Documentation",
-"image": "https://learningd3.com/blog/assets/img/posts/reading-the-d3-docs.jpg",
-"datePublished": "2016-12-28T00:00:00-08:00",
+"headline": "Onboarding Your Team to use D3.js",
+"image": "https://learningd3.com/blog/assets/img/posts/onboarding-your-team.jpg",
+"datePublished": "2017-01-10T00:00:00-08:00",
 "description": "The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of.",
-"url": "https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/"}</script>
+"url": "https://learningd3.com/blog/onboarding-your-team-to-use-d3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Getting the Most out of the D3.js Documentation</title>
-  <meta name="description" content="The D3 docs are one of the best ways to solve a problem you are encountering and learn about areas in D3 that you were unaware of. This post explains the bas...">
+  <title>Onboarding Your Team to use D3.js</title>
+  <meta name="description" content="If you work on a large team, one of the hurdles you will run into is getting someone up to speed with team workflows. One reason you might feel nervous about...">
   <link rel="icon" type="image/ico" href=/blog/assets/img/favicon.ico />
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="/blog/getting-the-most-out-of-the-d3-docs/">
+  <link rel="canonical" href="/blog/onboarding-your-team-to-use-d3/">
   <link rel="alternate" type="application/rss+xml" title="Learning D3" href="https://learningd3.com/blog/feed.xml">
 </head>
 
@@ -54,37 +54,35 @@
   <div class="post-content" itemprop="articleBody">
 
     
-    <img class="fit mb4" src="/blog/assets/img/posts/reading-the-d3-docs.jpg" alt="reading-the-d3-docs.jpg" />
-    <h1 class="post-title" itemprop="name headline">Getting the Most out of the D3.js Documentation</h1>
+    <img class="fit mb4" src="/blog/assets/img/posts/onboarding-your-team.jpg" alt="onboarding-your-team.jpg" />
+    <h1 class="post-title" itemprop="name headline">Onboarding Your Team to use D3.js</h1>
     
-    <p>The D3 docs are one of the best ways to solve a problem you are encountering and learn about areas in D3 that you were unaware of. This post explains the basic conventions that are used in the D3 documentation. Let’s look at three examples from the <a href="https://github.com/d3/d3/blob/master/API.md">API</a>.
-<br />
-<br />
-<br />
-d3.<strong>selectAll</strong>(<em>selector</em>)</p>
+    <p>If you work on a large team, one of the hurdles you will run into is getting someone up to speed with team workflows. One reason you might feel nervous about using D3 is the learning curve. The learning curve for D3 is probably given more credit than it’s due, but it is true that learning D3 requires some time. Here are some things you can do to onboard new team members.</p>
 
-<p>In this example, the selectAll method is being explained.
-Notice that the selectAll method is attached to the <code class="highlighter-rouge">d3</code> namespace. If the method being explained is not
-attached to the <code class="highlighter-rouge">d3</code> namespace, the object it is attached to will be specified. The italicized word (<code class="highlighter-rouge">selector</code> in this case) is a description of the parameter
-passed to the method.
-<br />
-<br />
-<br />
-selection.<strong>property</strong>(<em>name[, value]</em>)</p>
+<h2 id="create-conventions">Create Conventions</h2>
+<p>Don’t let your new teammate come in blind. Create guidelines and best practices that they can apply when they join. Writing these out will help you understand some of the best practices that otherwise wouldn’t be formally stated. Additionally, guidelines set a precedent that you care about the quality of your team’s code. The guidelines themselves are highly dependent on the larger context of what your team is building, but here are a few  possible questions you may want to anticipate.</p>
 
-<p>While it might look like an array, parameters inside brackets (<code class="highlighter-rouge">value</code> in this case) signify an <strong>optional</strong> parameter. The comma included inside the bracket reinforces that idea.
-<br />
-<br />
-<br />
-d3.<strong>csv</strong>(<em>url[[, row], callback]</em>)</p>
+<ol>
+  <li>How do I build visualizations using the front end framework we are using?</li>
+  <li>Where should our visualization components live?</li>
+  <li>How should team members use D3.js examples? How much copy and paste code is allowed?</li>
+  <li>What’s the process for extending a visualization?</li>
+  <li>What are the reusable components we can use with our visualizations?</li>
+</ol>
 
-<p>Here we have a required parameter <code class="highlighter-rouge">url</code> and two optional parameters <code class="highlighter-rouge">accessor</code> and <code class="highlighter-rouge">callback</code>. In this case, if you provide two parameters to the <code class="highlighter-rouge">.csv</code> method, they will be the url and the callback. However, if you provide 3 parameters, the second will be the accessor parameter, not the callback parameter.
-<br />
-<br /></p>
-<h3 id="understand-whats-actually-happening">Understand what’s actually happening</h3>
-<p>You will inevitably get stuck as you get better at D3. Get into the habit of going to the docs first. Make sure you understand the purpose of the methods you trying to use. You might be surprised to find that these methods are more powerful then you expected.</p>
+<h2 id="delegate-one-visualization-at-a-time">Delegate one visualization at a time</h2>
+<p>Getting thrown into a new team with new tools can be pretty daunting. One approach I’ve found to be helpful is to <strong>give recent hires responsibility for one visualization type</strong>. Once they demonstrate a sufficient level of understanding and ownership you can give another.</p>
 
-<p>If you’re interested in learning more about D3, I made something for you. It’s a comprehensive and concise course for learning the D3.js library. You can learn more about it <a href="https://learningd3.com">here</a>, or sign up for a free lesson below.</p>
+<p>If you pile the responsibility of learning multiple visualizations at once, people will look for easier solutions, often at the expense of D3’s flexibility.</p>
+
+<h2 id="invest-into-training">Invest into Training</h2>
+<p>I’m a big believer that D3 is a skill worth investing into. It’s why I created <a href="https://www.learningd3.com">Learning D3</a>.</p>
+
+<p>One suggestion for teams is to <strong>have at least one person become the designated trainer</strong>. The trainers job is to get new hires <strong>up to speed</strong>, to teach the basics of D3, and assign visualizations as they get started.</p>
+
+<p>Teaching something is a great way to make sure you understand it yourself, and it allows you to fill in the holes of your understanding. Equipping your team to learn how to teach is going to reap dividends down the line. If they can explain the concepts clearly, you can bet they will be able to solve the hairy problems that pop up when building visualizations.</p>
+
+<p>If you don’t have someone on your team who can teach D3, consider investing into your teams education. I’ve created a course that’s meant to get you up to speed with D3.js. It’s a no fluff way to learn the framework. You can find it <a href="https://www.learningd3.com">here</a>.</p>
 
   </div>
 </article>
