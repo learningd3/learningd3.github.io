@@ -4,7 +4,7 @@ title:  "Onboarding Your Team to use D3.js"
 date:   2017-01-10
 header-img: "onboarding-your-team.jpg"
 image: /assets/img/posts/onboarding-your-team.jpg
-description: "The D3 docs are one of the best ways to solve a problem you are encountering, or learn about areas in D3 that you were unaware of."
+description: "If you work on a large team, one of the hurdles you will run into is getting someone up to speed with team workflows."
 ---
 
 If you work on a large team, one of the hurdles you will run into is getting someone up to speed with team workflows. One reason you might feel nervous about using D3 is the learning curve. The learning curve for D3 is probably given more credit than it’s due, but it is true that learning D3 requires some time. Here are some things you can do to onboard new team members.
