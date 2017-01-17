@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Jan 2017 08:05:34 -0800</pubDate>
-    <lastBuildDate>Tue, 17 Jan 2017 08:05:34 -0800</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2017 09:05:13 -0800</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 09:05:13 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -40,7 +40,7 @@
   &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/textures.png&quot; alt=&quot;Photo of textures.js&quot; /&gt;
 &lt;/a&gt;
 &lt;br /&gt;
-&lt;a href=&quot;&quot;&gt;Textures.js&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/eidogram&quot;&gt;Riccardo Scalco&lt;/a&gt; is awesome for a host of reasons. There’s a large variety of textures, a nice API, and also good ideas for how to use them in your visualizations.&lt;/p&gt;
+&lt;a href=&quot;https://riccardoscalco.github.io/textures/&quot;&gt;Textures.js&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/eidogram&quot;&gt;Riccardo Scalco&lt;/a&gt; is awesome for a host of reasons. There’s a large variety of textures, a nice API, and also good ideas for how to use them in your visualizations.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
