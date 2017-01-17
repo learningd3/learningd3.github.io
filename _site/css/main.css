@@ -539,6 +539,10 @@ a:hover {
 .fit {
   max-width: 100%; }
 
+hr {
+  border: none;
+  border-top: 1px solid #EAEEF1; }
+
 .container {
   max-width: 850px;
   width: 90%;

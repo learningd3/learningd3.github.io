@@ -32,4 +32,4 @@ One suggestion for teams is to **have at least one person become the designated 
 
 Teaching something is a great way to make sure you understand it yourself, and it allows you to fill in the holes of your understanding. Equipping your team to learn how to teach is going to reap dividends down the line. If they can explain the concepts clearly, you can bet they will be able to solve the hairy problems that pop up when building visualizations.
 
-If you don't have someone on your team who can teach D3, consider investing into your teams education. I've created a course that's meant to get you up to speed with D3.js. It's a no fluff way to learn the framework. You can find it [here](https://www.learningd3.com).
+If you don't have someone on your team who can teach D3, consider investing into your teams education. I've created a course that's meant to get you up to speed with D3.js. It's a no fluff way to learn the library. You can find it [here](https://www.learningd3.com).

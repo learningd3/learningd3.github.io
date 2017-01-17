@@ -5,9 +5,73 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Jan 2017 08:21:14 -0800</pubDate>
-    <lastBuildDate>Tue, 10 Jan 2017 08:21:14 -0800</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2017 07:56:30 -0800</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 07:56:30 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>D3.js resources to improve your visualizations</title>
+        <description>&lt;p&gt;I’ve collected some of my favorite resources that you can use in combination with D3.js to enhance your visualizations and save you time.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://d3-legend.susielu.com/&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/d3-legend.jpg&quot; alt=&quot;Photo of D3 Legend&quot; /&gt;
+&lt;/a&gt;
+&lt;a href=&quot;http://d3-legend.susielu.com/&quot;&gt;D3 Legend&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/DataToViz&quot;&gt;Susie Lu&lt;/a&gt; is a nice way to generate legends. If you are sick of building legends over and over again, this is a great resource.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://1wheel.github.io/graph-scroll/&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/graph-scroll.png&quot; alt=&quot;Photo of Graph Scroll&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://1wheel.github.io/graph-scroll/&quot;&gt;Graph Scroll&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/adamrpearce&quot;&gt;Adam Pearce&lt;/a&gt; makes it easier to build scrolling visualizations like &lt;a href=&quot;http://www.bloomberg.com/graphics/2015-auto-sales/&quot;&gt;this one&lt;/a&gt; on Bloomberg.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://riccardoscalco.github.io/textures/&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/textures.png&quot; alt=&quot;Photo of textures.js&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;&quot;&gt;Textures.js&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/eidogram&quot;&gt;Riccardo Scalco&lt;/a&gt; is awesome for a host of reasons. There’s a large variety of textures, a nice API, and also good ideas for how to use them in your visualizations.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Caged/d3-tip&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/d3-tip.png&quot; alt=&quot;Photo of D3 Tooltip&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Caged/d3-tip&quot;&gt;D3.tip&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/caged&quot;&gt;Justin Palmer&lt;/a&gt; is one of the first D3 plugins I used. You can use this on all sorts of visualizations to provide context and additional information.
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://peterbeshai.com/vis/d3-line-chunked/&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/chunked.png&quot; alt=&quot;Photo of D3 Line Chunked&quot; /&gt;
+&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://peterbeshai.com/vis/d3-line-chunked/&quot;&gt;D3 Line Chunked&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/pbesh&quot;&gt;Peter Beshai&lt;/a&gt; is a great way to display missing data for your line charts.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Have any D3.js plugins or resources that you find yourself coming back to?
+Let me know on &lt;a href=&quot;http://twitter.com/philipcdavis&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
+        <link>https://learningd3.com/blog/resources-to-improve-your-visualizations/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/resources-to-improve-your-visualizations/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Onboarding Your Team to use D3.js</title>
@@ -36,7 +100,7 @@
 
 &lt;p&gt;Teaching something is a great way to make sure you understand it yourself, and it allows you to fill in the holes of your understanding. Equipping your team to learn how to teach is going to reap dividends down the line. If they can explain the concepts clearly, you can bet they will be able to solve the hairy problems that pop up when building visualizations.&lt;/p&gt;
 
-&lt;p&gt;If you don’t have someone on your team who can teach D3, consider investing into your teams education. I’ve created a course that’s meant to get you up to speed with D3.js. It’s a no fluff way to learn the framework. You can find it &lt;a href=&quot;https://www.learningd3.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you don’t have someone on your team who can teach D3, consider investing into your teams education. I’ve created a course that’s meant to get you up to speed with D3.js. It’s a no fluff way to learn the library. You can find it &lt;a href=&quot;https://www.learningd3.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jan 2017 00:00:00 -0800</pubDate>
         <link>https://learningd3.com/blog/onboarding-your-team-to-use-d3/</link>
