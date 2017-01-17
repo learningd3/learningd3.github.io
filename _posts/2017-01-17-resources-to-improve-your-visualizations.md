@@ -44,6 +44,7 @@ I’ve collected some of my favorite resources that you can use in combination w
 </a>
 <br>
 [D3.tip](https://github.com/Caged/d3-tip) created by [Justin Palmer](https://twitter.com/caged) is one of the first D3 plugins I used. You can use this on all sorts of visualizations to provide context and additional information.
+
 <br>
 <hr>
 <br>
@@ -54,6 +55,8 @@ I’ve collected some of my favorite resources that you can use in combination w
 <br>
 [D3 Line Chunked](http://peterbeshai.com/vis/d3-line-chunked/) created by [Peter Beshai](https://twitter.com/pbesh) is a great way to display missing data for your line charts.
 
+<br>
 <hr>
+<br>
 Have any D3.js plugins or resources that you find yourself coming back to?
 Let me know on [twitter](http://twitter.com/philipcdavis).

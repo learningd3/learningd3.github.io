@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Jan 2017 08:02:56 -0800</pubDate>
-    <lastBuildDate>Tue, 17 Jan 2017 08:02:56 -0800</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2017 08:05:34 -0800</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 08:05:34 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -51,8 +51,9 @@
   &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/d3-tip.png&quot; alt=&quot;Photo of D3 Tooltip&quot; /&gt;
 &lt;/a&gt;
 &lt;br /&gt;
-&lt;a href=&quot;https://github.com/Caged/d3-tip&quot;&gt;D3.tip&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/caged&quot;&gt;Justin Palmer&lt;/a&gt; is one of the first D3 plugins I used. You can use this on all sorts of visualizations to provide context and additional information.
-&lt;br /&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/Caged/d3-tip&quot;&gt;D3.tip&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/caged&quot;&gt;Justin Palmer&lt;/a&gt; is one of the first D3 plugins I used. You can use this on all sorts of visualizations to provide context and additional information.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -63,9 +64,11 @@
 &lt;br /&gt;
 &lt;a href=&quot;http://peterbeshai.com/vis/d3-line-chunked/&quot;&gt;D3 Line Chunked&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/pbesh&quot;&gt;Peter Beshai&lt;/a&gt; is a great way to display missing data for your line charts.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;Have any D3.js plugins or resources that you find yourself coming back to?
+&lt;p&gt;&lt;br /&gt;
+Have any D3.js plugins or resources that you find yourself coming back to?
 Let me know on &lt;a href=&quot;http://twitter.com/philipcdavis&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
