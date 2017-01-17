@@ -33,7 +33,7 @@ I’ve collected some of my favorite resources that you can use in combination w
   <img class="fit" src="{{site.baseurl}}/assets/img/posts/d3-resources/textures.png" alt="Photo of textures.js" />
 </a>
 <br>
-[Textures.js]() created by [Riccardo Scalco](https://twitter.com/eidogram) is awesome for a host of reasons. There’s a large variety of textures, a nice API, and also good ideas for how to use them in your visualizations.
+[Textures.js](https://riccardoscalco.github.io/textures/) created by [Riccardo Scalco](https://twitter.com/eidogram) is awesome for a host of reasons. There’s a large variety of textures, a nice API, and also good ideas for how to use them in your visualizations.
 
 <br>
 <hr>
