@@ -9,6 +9,7 @@ description: "I’ve collected some of my favorite D3.js resources that you can 
 
 I’ve collected some of my favorite resources that you can use in combination with D3.js to enhance your visualizations and save you time.
 
+<hr>
 <a href="http://d3-legend.susielu.com/">
   <img class="fit" src="{{site.baseurl}}/assets/img/posts/d3-resources/d3-legend.jpg" alt="Photo of D3 Legend" />
 </a>

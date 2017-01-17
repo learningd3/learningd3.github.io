@@ -5,13 +5,15 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Jan 2017 08:00:51 -0800</pubDate>
-    <lastBuildDate>Tue, 17 Jan 2017 08:00:51 -0800</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2017 08:02:56 -0800</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 08:02:56 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
         <title>D3.js resources to improve your visualizations</title>
         <description>&lt;p&gt;I’ve collected some of my favorite resources that you can use in combination with D3.js to enhance your visualizations and save you time.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://d3-legend.susielu.com/&quot;&gt;
   &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/d3-resources/d3-legend.jpg&quot; alt=&quot;Photo of D3 Legend&quot; /&gt;
