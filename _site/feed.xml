@@ -3,10 +3,10 @@
   <channel>
     <title>Learning D3</title>
     <description>Build data visualizations on your own terms</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jan 2017 08:37:58 -0800</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2017 08:37:58 -0800</lastBuildDate>
+    <link>https://learningd3.com/blog/</link>
+    <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 24 Jan 2017 08:38:43 -0800</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2017 08:38:43 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -84,8 +84,8 @@ It’s about making visuals with instructions.&lt;/p&gt;
 &lt;p&gt;If you’re interested in learning D3.js, consider enrolling in the full &lt;a href=&quot;https://learningd3.com&quot;&gt;course&lt;/a&gt;. It’s a concise and comprehensive guide to the D3.js library. I’d also love to &lt;a href=&quot;https://twitter.com/philipcdavis&quot;&gt;hear from you&lt;/a&gt; if you have feedback or resources to share.&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Jan 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/generative-art/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/generative-art/</guid>
+        <link>https://learningd3.com/blog/generative-art/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/generative-art/</guid>
         
         
       </item>
@@ -153,8 +153,8 @@ Have any D3.js plugins or resources that you find yourself coming back to?
 Let me know on &lt;a href=&quot;http://twitter.com/philipcdavis&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/resources-to-improve-your-visualizations/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/resources-to-improve-your-visualizations/</guid>
+        <link>https://learningd3.com/blog/resources-to-improve-your-visualizations/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/resources-to-improve-your-visualizations/</guid>
         
         
       </item>
@@ -189,8 +189,8 @@ Let me know on &lt;a href=&quot;http://twitter.com/philipcdavis&quot;&gt;twitter
 &lt;p&gt;If you don’t have someone on your team who can teach D3, consider investing into your teams education. I’ve created a course that’s meant to get you up to speed with D3.js. It’s a no fluff way to learn the library. You can find it &lt;a href=&quot;https://www.learningd3.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jan 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/onboarding-your-team-to-use-d3/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/onboarding-your-team-to-use-d3/</guid>
+        <link>https://learningd3.com/blog/onboarding-your-team-to-use-d3/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/onboarding-your-team-to-use-d3/</guid>
         
         
       </item>
@@ -227,8 +227,8 @@ d3.&lt;strong&gt;csv&lt;/strong&gt;(&lt;em&gt;url[[, row], callback]&lt;/em&gt;)
 &lt;p&gt;If you’re interested in learning more about D3, I made something for you. It’s a comprehensive and concise course for learning the D3.js library. You can learn more about it &lt;a href=&quot;https://learningd3.com&quot;&gt;here&lt;/a&gt;, or sign up for a free lesson below.&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/getting-the-most-out-of-the-d3-docs/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/getting-the-most-out-of-the-d3-docs/</guid>
+        <link>https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/getting-the-most-out-of-the-d3-docs/</guid>
         
         
       </item>
@@ -279,8 +279,8 @@ In the lesson, I cover how to use color and typography in your data visualizatio
 &lt;p&gt;If you’re interested in learning D3.js, you can learn more about the course &lt;a href=&quot;https://learningd3.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/how-to-pick-colors-for-your-data-visualization/</guid>
+        <link>https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/how-to-pick-colors-for-your-data-visualization/</guid>
         
         
       </item>
@@ -347,8 +347,8 @@ In the lesson, I cover how to use color and typography in your data visualizatio
 &lt;p&gt;If you liked this post, you should check out my full course on D3. You can read more about it below and sign up for a free lesson!&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/using-es6-with-d3/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/using-es6-with-d3/</guid>
+        <link>https://learningd3.com/blog/using-es6-with-d3/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/using-es6-with-d3/</guid>
         
         
       </item>
