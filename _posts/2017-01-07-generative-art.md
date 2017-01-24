@@ -2,8 +2,8 @@
 layout: post
 title:  "Creating Generative Art with D3.js"
 date:   2017-01-24
-header-img: "generative-art/heart.gif"
-image: /assets/img/posts/generative-art/heart.gif
+header-img: "generative-art/moire.jpg"
+image: /assets/img/posts/generative-art/moire.jpg
 description: "Generative art is not about communicating information. It's about making visuals with instructions."
 ---
 
@@ -20,7 +20,7 @@ It's about making visuals with instructions.
 ## Recreating an art piece, in code.
 <img class="fit" src="{{site.baseurl}}/assets/img/posts/generative-art/heart-original.jpg" alt="Photo of Heart" />
 
-I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I was looking for a technique that allowed me to create this effect using any SVG path.
+I created this heart using Illustrator around 8 years ago. I wanted to see how difficult it would be to create something similar using D3.js. I was looking for a technique that allowed me to create this effect using any SVG path.
 
 First, I created a grid of SVG circles and colored them using a scale from color brewer.
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I love how easy it is to generate pretty things with <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a>. <a href="https://t.co/m40mQJHRK6">pic.twitter.com/m40mQJHRK6</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816507173396041728">January 4, 2017</a></blockquote>
