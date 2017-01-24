@@ -512,12 +512,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, helvetica, roboto, segoe ui, arial, sans-serif;
   margin: 0;
   color: #29292a;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: white; }
 
 a {
   color: #267CFF;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 a:hover {
   opacity: .8; }
@@ -549,7 +549,7 @@ hr {
   margin: 0 auto; }
 
 .container-small {
-  max-width: 630px;
+  max-width: 650px;
   width: 92%;
   margin: 0 auto; }
 
@@ -879,6 +879,10 @@ hr {
   margin-top: 64px;
   margin-bottom: 64px; }
 
+.mxn0 {
+  margin-left: 0;
+  margin-right: 0; }
+
 .mxn1 {
   margin-left: -8px;
   margin-right: -8px; }
@@ -894,6 +898,14 @@ hr {
 .mxn4 {
   margin-left: -64px;
   margin-right: -64px; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.px0 {
+  padding-left: 0;
+  padding-right: 0; }
 
 .input {
   padding: 6px 6px;
@@ -936,6 +948,16 @@ hr {
   list-style: none;
   padding-left: 0; }
 
+.post-img-description {
+  text-align: center;
+  color: #8e8e91;
+  margin: 0;
+  font-size: .9rem;
+  margin-bottom: 40px; }
+  .post-img-description a {
+    color: #8e8e91;
+    text-decoration: underline; }
+
 .text-center {
   text-align: center; }
 
@@ -969,8 +991,10 @@ h6 {
   font-size: .9rem; }
 
 p, ul, li, blockquote {
-  font-size: 1.1rem;
-  line-height: 1.6; }
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-top: 15px; }
 
 li {
   margin-bottom: .3rem; }
@@ -1019,7 +1043,9 @@ blockquote {
     font-size: 1.3rem; }
 
   p, ul, li, blockquote {
-    font-size: 1.2rem; } }
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    margin-top: 20px; } }
 figure {
   margin: 0;
   padding: 1px 20px;
