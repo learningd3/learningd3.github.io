@@ -28,7 +28,13 @@
 
 .post-list-meta {
   color: $smoke-shadow;
-  float: right;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .post-list-meta {
+    float: right;
+  }
 }
 
 .post-list {

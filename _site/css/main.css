@@ -944,8 +944,11 @@ hr {
 
 .post-list-meta {
   color: #abb1b5;
-  float: right; }
+  display: block; }
 
+@media (min-width: 600px) {
+  .post-list-meta {
+    float: right; } }
 .post-list {
   list-style: none;
   padding-left: 0; }
