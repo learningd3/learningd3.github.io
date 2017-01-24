@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Generative Art with D3.js"
-date:   2017-01-23
+date:   2017-01-24
 header-img: "generative-art/heart.gif"
 image: /assets/img/posts/generative-art/heart.gif
 description: "Generative art is not about communicating information. It's about making visuals with instructions."
@@ -20,13 +20,13 @@ It's about making visuals with instructions.
 ## Recreating an art piece, in code.
 <img class="fit" src="{{site.baseurl}}/assets/img/posts/generative-art/heart-original.jpg" alt="Photo of Heart" />
 
-I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I wanted a technique that allowed me to create a similar effect using any SVG path.
+I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I was looking for a technique that allowed me to create this effect using any SVG path.
 
-First, I create a grid of SVG circles, and colored them using a scale from color brewer.
+First, I created a grid of SVG circles and colored them using a scale from color brewer.
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I love how easy it is to generate pretty things with <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a>. <a href="https://t.co/m40mQJHRK6">pic.twitter.com/m40mQJHRK6</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816507173396041728">January 4, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There's a way to detect this in d3 for polygons, but I wasn't able to find a solution for paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.
+Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There's a way to detect this in d3 for polygons, but I wasn't able to find a solution for SVG Paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Getting closer. Canvas has a handy method for detecting if a point is inside a path. Couldn&#39;t find for SVG: <a href="https://t.co/ckggydyFC6">https://t.co/ckggydyFC6</a><a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/GpBtuDXPcE">pic.twitter.com/GpBtuDXPcE</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816845636012081152">January 5, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -34,9 +34,9 @@ Next, I imported a SVG path and tried to detect whether the center of a circle w
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Next Step is to get this Mitchell&#39;s best candidate example to fill in an arbitrary path. <a href="https://t.co/cksIDOrpnk">https://t.co/cksIDOrpnk</a> <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/kjC5aqf3VL">pic.twitter.com/kjC5aqf3VL</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/817048601545146368">January 5, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This effect was really great on its own. But it's not what I wanted for this piece. I didn't want a grid based distribution. I wanted it to look like a human placed the circles, which i why I decided to use an alorithm.
+This effect was really great on its own. But it's not what I wanted for this piece. I didn't want an even grid of circles. I wanted it to look like a human placed the circles.
 
-I was really inspired by Mike Bostock's example of Mitchell's best candidate. What this algorithm does takes a number of candidates. Plots them randomly, and then chooses the best candidate based on whatever point is farthest from all the others.
+I was really inspired by Mike Bostock's example of Mitchell's best candidate. This algorithm takes a number of random  coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.
 
 Using this algorithm, I was able to get my final result.
 
@@ -46,12 +46,10 @@ I'm happy with it, but there are two problems I would love to have solved.
 
 The first being the ability to detect whether or not a point is inside a path using SVG. Canvas is fine, but there are certain things I'd like to do with animations that are harder using canvas.
 
-The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i'm only checking the center of the circle to make sure it stays within the path.  There's probably a way to detect that the perimeter of the path hasn't escaped but I haven't found it yet.
+The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i'm only checking the center of the circle to make sure it stays within the path. There's probably a way to detect that the area of the circle hasn't escaped the path but I haven't found it yet.
 
 ## Explorations
-
 One of the side benefits of working on generative art in D3.js is that you discover new portions of the API. Below i've collected some of the things i've made this month.
-
 
   <figure class="px0">
     <img class="fit" src="{{site.baseurl}}/assets/img/posts/generative-art/ring-of-bars.gif" alt="custom arc tweening" />
@@ -81,4 +79,4 @@ One of the side benefits of working on generative art in D3.js is that you disco
   <a href="http://bl.ocks.org/philipcdavis/2b626bdef4133921615a5e4fbb921e70">Live</a>
 </div>
 
-If you're interested in learning D3.js, consider enrolling in the full [course](https://learningd3.com). I'd also love to [hear from you](https://twitter.com/philipcdavis) about any work you've seen or created that has inspired you.
+If you're interested in learning D3.js, consider enrolling in the full [course](https://learningd3.com). It's a concise and comprehensive guide to the D3.js library. I'd also love to [hear from you](https://twitter.com/philipcdavis) if you have feedback or resources to share.

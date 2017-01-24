@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Learning D3" />
 <meta property="og:image" content="https://learningd3.com/blog/assets/img/posts/generative-art/heart.gif" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-01-23T00:00:00-08:00" />
+<meta property="article:published_time" content="2017-01-24T00:00:00-08:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@philipcdavis" />
 <script type="application/ld+json">
@@ -23,7 +23,7 @@
 "@type": "BlogPosting",
 "headline": "Creating Generative Art with D3.js",
 "image": "https://learningd3.com/blog/assets/img/posts/generative-art/heart.gif",
-"datePublished": "2017-01-23T00:00:00-08:00",
+"datePublished": "2017-01-24T00:00:00-08:00",
 "description": "Generative art is not about communicating information. It’s about making visuals with instructions.",
 "url": "https://learningd3.com/blog/generative-art/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -69,13 +69,13 @@ It’s about making visuals with instructions.</p>
 <h2 id="recreating-an-art-piece-in-code">Recreating an art piece, in code.</h2>
 <p><img class="fit" src="/blog/assets/img/posts/generative-art/heart-original.jpg" alt="Photo of Heart" /></p>
 
-<p>I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I wanted a technique that allowed me to create a similar effect using any SVG path.</p>
+<p>I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I was looking for a technique that allowed me to create this effect using any SVG path.</p>
 
-<p>First, I create a grid of SVG circles, and colored them using a scale from color brewer.</p>
+<p>First, I created a grid of SVG circles and colored them using a scale from color brewer.</p>
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I love how easy it is to generate pretty things with <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a>. <a href="https://t.co/m40mQJHRK6">pic.twitter.com/m40mQJHRK6</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816507173396041728">January 4, 2017</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There’s a way to detect this in d3 for polygons, but I wasn’t able to find a solution for paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.</p>
+<p>Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There’s a way to detect this in d3 for polygons, but I wasn’t able to find a solution for SVG Paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.</p>
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Getting closer. Canvas has a handy method for detecting if a point is inside a path. Couldn&#39;t find for SVG: <a href="https://t.co/ckggydyFC6">https://t.co/ckggydyFC6</a><a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/GpBtuDXPcE">pic.twitter.com/GpBtuDXPcE</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816845636012081152">January 5, 2017</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -83,9 +83,9 @@ It’s about making visuals with instructions.</p>
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Next Step is to get this Mitchell&#39;s best candidate example to fill in an arbitrary path. <a href="https://t.co/cksIDOrpnk">https://t.co/cksIDOrpnk</a> <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/kjC5aqf3VL">pic.twitter.com/kjC5aqf3VL</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/817048601545146368">January 5, 2017</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>This effect was really great on its own. But it’s not what I wanted for this piece. I didn’t want a grid based distribution. I wanted it to look like a human placed the circles, which i why I decided to use an alorithm.</p>
+<p>This effect was really great on its own. But it’s not what I wanted for this piece. I didn’t want an even grid of circles. I wanted it to look like a human placed the circles.</p>
 
-<p>I was really inspired by Mike Bostock’s example of Mitchell’s best candidate. What this algorithm does takes a number of candidates. Plots them randomly, and then chooses the best candidate based on whatever point is farthest from all the others.</p>
+<p>I was really inspired by Mike Bostock’s example of Mitchell’s best candidate. This algorithm takes a number of random  coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.</p>
 
 <p>Using this algorithm, I was able to get my final result.</p>
 
@@ -95,10 +95,9 @@ It’s about making visuals with instructions.</p>
 
 <p>The first being the ability to detect whether or not a point is inside a path using SVG. Canvas is fine, but there are certain things I’d like to do with animations that are harder using canvas.</p>
 
-<p>The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i’m only checking the center of the circle to make sure it stays within the path.  There’s probably a way to detect that the perimeter of the path hasn’t escaped but I haven’t found it yet.</p>
+<p>The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i’m only checking the center of the circle to make sure it stays within the path. There’s probably a way to detect that the area of the circle hasn’t escaped the path but I haven’t found it yet.</p>
 
 <h2 id="explorations">Explorations</h2>
-
 <p>One of the side benefits of working on generative art in D3.js is that you discover new portions of the API. Below i’ve collected some of the things i’ve made this month.</p>
 
 <figure class="px0">
@@ -128,7 +127,7 @@ It’s about making visuals with instructions.</p>
   <a href="http://bl.ocks.org/philipcdavis/2b626bdef4133921615a5e4fbb921e70">Live</a>
 </div>
 
-<p>If you’re interested in learning D3.js, consider enrolling in the full <a href="https://learningd3.com">course</a>. I’d also love to <a href="https://twitter.com/philipcdavis">hear from you</a> about any work you’ve seen or created that has inspired you.</p>
+<p>If you’re interested in learning D3.js, consider enrolling in the full <a href="https://learningd3.com">course</a>. It’s a concise and comprehensive guide to the D3.js library. I’d also love to <a href="https://twitter.com/philipcdavis">hear from you</a> if you have feedback or resources to share.</p>
 
   </div>
 </article>
