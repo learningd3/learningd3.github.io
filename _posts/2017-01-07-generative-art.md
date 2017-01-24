@@ -26,7 +26,7 @@ First, I created a grid of SVG circles and colored them using a scale from color
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I love how easy it is to generate pretty things with <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a>. <a href="https://t.co/m40mQJHRK6">pic.twitter.com/m40mQJHRK6</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816507173396041728">January 4, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There's a way to detect this in d3 for polygons, but I wasn't able to find a solution for SVG Paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.
+Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. I found lots of ways to do this with polygons, but I wasn't able to find a solution for SVG paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Getting closer. Canvas has a handy method for detecting if a point is inside a path. Couldn&#39;t find for SVG: <a href="https://t.co/ckggydyFC6">https://t.co/ckggydyFC6</a><a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/GpBtuDXPcE">pic.twitter.com/GpBtuDXPcE</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816845636012081152">January 5, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -36,9 +36,9 @@ Next, I imported a SVG path and tried to detect whether the center of a circle w
 
 This effect was really great on its own. But it's not what I wanted for this piece. I didn't want an even grid of circles. I wanted it to look like a human placed the circles.
 
-I was really inspired by Mike Bostock's example of Mitchell's best candidate. This algorithm takes a number of random  coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.
+I came across [Mike Bostock's](https://twitter.com/mbostock) example of [Mitchell's best candidate](https://bl.ocks.org/mbostock/d7bf3bd67d00ed79695b) in his article on [visualizing algorithms](https://bost.ocks.org/mike/algorithms/) and realized it would be the perfect fit for the task . This algorithm takes a number of random coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.
 
-Using this algorithm, I was able to get my final result.
+Using this algorithm, and help from one of Mike's [examples](https://bl.ocks.org/mbostock/6224050) I was able to get my final result.
 
 <img class="fit" src="{{site.baseurl}}/assets/img/posts/generative-art/heart.gif" alt="Photo of Heart" />
 
