@@ -36,7 +36,7 @@ Next, I imported a SVG path and tried to detect whether the center of a circle w
 
 This effect was really great on its own. But it's not what I wanted for this piece. I didn't want an even grid of circles. I wanted it to look like a human placed the circles.
 
-I came across [Mike Bostock's](https://twitter.com/mbostock) example of [Mitchell's best candidate](https://bl.ocks.org/mbostock/d7bf3bd67d00ed79695b) in his article on [visualizing algorithms](https://bost.ocks.org/mike/algorithms/) and realized it would be the perfect fit for the task . This algorithm takes a number of random coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.
+I came across [Mike Bostock's](https://twitter.com/mbostock) example of [Mitchell's best candidate](https://bl.ocks.org/mbostock/d7bf3bd67d00ed79695b) in his article on [visualizing algorithms](https://bost.ocks.org/mike/algorithms/) and realized it would be the perfect fit for the task. This algorithm takes a number of random coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.
 
 Using this algorithm, and help from one of Mike's [examples](https://bl.ocks.org/mbostock/6224050) I was able to get my final result.
 

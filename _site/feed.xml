@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jan 2017 08:38:43 -0800</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2017 08:38:43 -0800</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2017 08:40:29 -0800</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2017 08:40:29 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -39,7 +39,7 @@ It’s about making visuals with instructions.&lt;/p&gt;
 
 &lt;p&gt;This effect was really great on its own. But it’s not what I wanted for this piece. I didn’t want an even grid of circles. I wanted it to look like a human placed the circles.&lt;/p&gt;
 
-&lt;p&gt;I came across &lt;a href=&quot;https://twitter.com/mbostock&quot;&gt;Mike Bostock’s&lt;/a&gt; example of &lt;a href=&quot;https://bl.ocks.org/mbostock/d7bf3bd67d00ed79695b&quot;&gt;Mitchell’s best candidate&lt;/a&gt; in his article on &lt;a href=&quot;https://bost.ocks.org/mike/algorithms/&quot;&gt;visualizing algorithms&lt;/a&gt; and realized it would be the perfect fit for the task . This algorithm takes a number of random coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.&lt;/p&gt;
+&lt;p&gt;I came across &lt;a href=&quot;https://twitter.com/mbostock&quot;&gt;Mike Bostock’s&lt;/a&gt; example of &lt;a href=&quot;https://bl.ocks.org/mbostock/d7bf3bd67d00ed79695b&quot;&gt;Mitchell’s best candidate&lt;/a&gt; in his article on &lt;a href=&quot;https://bost.ocks.org/mike/algorithms/&quot;&gt;visualizing algorithms&lt;/a&gt; and realized it would be the perfect fit for the task. This algorithm takes a number of random coordinates, and then chooses the best candidate based on whatever point is farthest from all the others.&lt;/p&gt;
 
 &lt;p&gt;Using this algorithm, and help from one of Mike’s &lt;a href=&quot;https://bl.ocks.org/mbostock/6224050&quot;&gt;examples&lt;/a&gt; I was able to get my final result.&lt;/p&gt;
 
