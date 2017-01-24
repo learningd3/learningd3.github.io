@@ -5,9 +5,91 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Jan 2017 22:34:48 -0800</pubDate>
-    <lastBuildDate>Mon, 23 Jan 2017 22:34:48 -0800</lastBuildDate>
+    <pubDate>Mon, 23 Jan 2017 22:38:37 -0800</pubDate>
+    <lastBuildDate>Mon, 23 Jan 2017 22:38:37 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Creating Generative Art with D3.js</title>
+        <description>&lt;p&gt;I recently took a trip to the SFMoma where I came across the work of Sol LeWitt. One of the interesting things about Sol’s work was that he created the rules of his art pieces, but they were executable by anyone. I wanted to see if anyone had recreated Sol’s pieces using D3.js. When I did a quick search I found that &lt;a href=&quot;https://twitter.com/cagrimmett&quot;&gt;Chuck Grimmet&lt;/a&gt; had made some pieces which was really inspiring.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Nice d3js rendition of Sol LeWitt&amp;#39;s Wall Drawing 86 by &lt;a href=&quot;https://twitter.com/cagrimmett&quot;&gt;@cagrimmett&lt;/a&gt; - &lt;a href=&quot;https://t.co/BaU46OxZmc&quot;&gt;https://t.co/BaU46OxZmc&lt;/a&gt; &lt;a href=&quot;https://t.co/WOQZ2M0iOA&quot;&gt;pic.twitter.com/WOQZ2M0iOA&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/789256091968245760&quot;&gt;October 21, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;It got me interested in the idea of generative art.
+Generative art is not about communicating information.
+It’s about making visuals with instructions.&lt;/p&gt;
+
+&lt;h2 id=&quot;recreating-an-art-piece-in-code&quot;&gt;Recreating an art piece, in code.&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/heart-original.jpg&quot; alt=&quot;Photo of Heart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I wanted a technique that allowed me to create a similar effect using any SVG path.&lt;/p&gt;
+
+&lt;p&gt;First, I create a grid of SVG circles, and colored them using a scale from color brewer.&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I love how easy it is to generate pretty things with &lt;a href=&quot;https://twitter.com/hashtag/d3js?src=hash&quot;&gt;#d3js&lt;/a&gt;. &lt;a href=&quot;https://t.co/m40mQJHRK6&quot;&gt;pic.twitter.com/m40mQJHRK6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/816507173396041728&quot;&gt;January 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There’s a way to detect this in d3 for polygons, but I wasn’t able to find a solution for paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;❤️ Getting closer. Canvas has a handy method for detecting if a point is inside a path. Couldn&amp;#39;t find for SVG: &lt;a href=&quot;https://t.co/ckggydyFC6&quot;&gt;https://t.co/ckggydyFC6&lt;/a&gt;&lt;a href=&quot;https://twitter.com/hashtag/d3js?src=hash&quot;&gt;#d3js&lt;/a&gt; &lt;a href=&quot;https://t.co/GpBtuDXPcE&quot;&gt;pic.twitter.com/GpBtuDXPcE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/816845636012081152&quot;&gt;January 5, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;❤️ Next Step is to get this Mitchell&amp;#39;s best candidate example to fill in an arbitrary path. &lt;a href=&quot;https://t.co/cksIDOrpnk&quot;&gt;https://t.co/cksIDOrpnk&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/d3js?src=hash&quot;&gt;#d3js&lt;/a&gt; &lt;a href=&quot;https://t.co/kjC5aqf3VL&quot;&gt;pic.twitter.com/kjC5aqf3VL&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/817048601545146368&quot;&gt;January 5, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This effect was really great on its own. But it’s not what I wanted for this piece. I didn’t want a grid based distribution. I wanted it to look like a human placed the circles, which i why I decided to use an alorithm.&lt;/p&gt;
+
+&lt;p&gt;I was really inspired by Mike Bostock’s example of Mitchell’s best candidate. What this algorithm does takes a number of candidates. Plots them randomly, and then chooses the best candidate based on whatever point is farthest from all the others.&lt;/p&gt;
+
+&lt;p&gt;Using this algorithm, I was able to get my final result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/heart.gif&quot; alt=&quot;Photo of Heart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m happy with it, but there are two problems I would love to have solved.&lt;/p&gt;
+
+&lt;p&gt;The first being the ability to detect whether or not a point is inside a path using SVG. Canvas is fine, but there are certain things I’d like to do with animations that are harder using canvas.&lt;/p&gt;
+
+&lt;p&gt;The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i’m only checking the center of the circle to make sure it stays within the path.  There’s probably a way to detect that the perimeter of the path hasn’t escaped but I haven’t found it yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;explorations&quot;&gt;Explorations&lt;/h2&gt;
+
+&lt;p&gt;One of the side benefits of working on generative art in D3.js is that you discover new portions of the API. Below i’ve collected some of the things i’ve made this month.&lt;/p&gt;
+
+&lt;figure class=&quot;px0&quot;&gt;
+    &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/ring-of-bars.gif&quot; alt=&quot;custom arc tweening&quot; /&gt;
+  &lt;/figure&gt;
+&lt;div class=&quot;post-img-description&quot;&gt;Example of Custom Arc Tweening.   
+    &lt;a href=&quot;http://bl.ocks.org/philipcdavis/dafa2489338f593c526a8f9978f0dee1&quot;&gt;Live&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;figure class=&quot;px0&quot;&gt;
+&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/circle-tunnel.gif&quot; alt=&quot;transitions example&quot; /&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;post-img-description&quot;&gt;
+  Example of Using D3.js transitions.
+  &lt;a href=&quot;http://bl.ocks.org/philipcdavis/b5224a272556fcb2d0c776b7a247ede4&quot;&gt;Live&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;figure class=&quot;px0&quot;&gt;
+&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/static.gif&quot; alt=&quot;generating static example&quot; /&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;post-img-description&quot;&gt;Generating Static&lt;/div&gt;
+
+&lt;figure class=&quot;px0&quot;&gt;
+&lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/generative-art/moire.jpg&quot; alt=&quot;Working with radial lines&quot; /&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;post-img-description&quot;&gt;Working with Radial Lines.
+  &lt;a href=&quot;http://bl.ocks.org/philipcdavis/2b626bdef4133921615a5e4fbb921e70&quot;&gt;Live&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you’re interested in learning D3.js, consider enrolling in the full &lt;a href=&quot;https://learningd3.com&quot;&gt;course&lt;/a&gt;. I’d also love to &lt;a href=&quot;https://twitter.com/philipcdavis&quot;&gt;hear from you&lt;/a&gt; about any work you’ve seen or created that has inspired you.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Jan 2017 00:00:00 -0800</pubDate>
+        <link>https://learningd3.com/blog/generative-art/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/generative-art/</guid>
+        
+        
+      </item>
     
       <item>
         <title>D3.js resources to improve your visualizations</title>

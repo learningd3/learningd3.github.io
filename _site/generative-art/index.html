@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Creating Generative Art with D3.js - Learning D3</title>
+<meta property="og:title" content="Creating Generative Art with D3.js" />
+<meta name="description" content="Generative art is not about communicating information. It’s about making visuals with instructions." />
+<meta property="og:description" content="Generative art is not about communicating information. It’s about making visuals with instructions." />
+<link rel="canonical" href="https://learningd3.com/blog/generative-art/" />
+<meta property="og:url" content="https://learningd3.com/blog/generative-art/" />
+<meta property="og:site_name" content="Learning D3" />
+<meta property="og:image" content="https://learningd3.com/blog/assets/img/posts/generative-art/heart.gif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-23T00:00:00-08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@philipcdavis" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Creating Generative Art with D3.js",
+"image": "https://learningd3.com/blog/assets/img/posts/generative-art/heart.gif",
+"datePublished": "2017-01-23T00:00:00-08:00",
+"description": "Generative art is not about communicating information. It’s about making visuals with instructions.",
+"url": "https://learningd3.com/blog/generative-art/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <title>Creating Generative Art with D3.js</title>
+  <meta name="description" content="I recently took a trip to the SFMoma where I came across the work of Sol LeWitt. One of the interesting things about Sol’s work was that he created the rules...">
+  <link rel="icon" type="image/ico" href=/blog/assets/img/favicon.ico />
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="canonical" href="/blog/generative-art/">
+  <link rel="alternate" type="application/rss+xml" title="Learning D3" href="https://learningd3.com/blog/feed.xml">
+</head>
+
+
+  <body>
+    <nav class="nav cf">
+  <a class="nav-logo pull-left " href="https://www.learningd3.com">
+    <img class="nav-logo-img" src="/blog/assets/svg/logo.svg" alt="Philip Davis"/>
+  </a>
+  <div class="nav-links pull-right">
+    <a href="https://www.learningd3.com" class="btn btn-md btn-blue btn-bold">Full Course</a>
+    <a href="/blog/" class="btn btn-light-blue btn-md btn-bold">Articles</a>
+  </div>
+</nav>
+
+    <div class="container-small">
+      <article class="post container-small" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content" itemprop="articleBody">
+
+    
+    <img class="fit mb4" src="/blog/assets/img/posts/generative-art/heart.gif" alt="generative-art/heart.gif" />
+    <h1 class="post-title" itemprop="name headline">Creating Generative Art with D3.js</h1>
+    
+    <p>I recently took a trip to the SFMoma where I came across the work of Sol LeWitt. One of the interesting things about Sol’s work was that he created the rules of his art pieces, but they were executable by anyone. I wanted to see if anyone had recreated Sol’s pieces using D3.js. When I did a quick search I found that <a href="https://twitter.com/cagrimmett">Chuck Grimmet</a> had made some pieces which was really inspiring.</p>
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Nice d3js rendition of Sol LeWitt&#39;s Wall Drawing 86 by <a href="https://twitter.com/cagrimmett">@cagrimmett</a> - <a href="https://t.co/BaU46OxZmc">https://t.co/BaU46OxZmc</a> <a href="https://t.co/WOQZ2M0iOA">pic.twitter.com/WOQZ2M0iOA</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/789256091968245760">October 21, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>It got me interested in the idea of generative art.
+Generative art is not about communicating information.
+It’s about making visuals with instructions.</p>
+
+<h2 id="recreating-an-art-piece-in-code">Recreating an art piece, in code.</h2>
+<p><img class="fit" src="/blog/assets/img/posts/generative-art/heart-original.jpg" alt="Photo of Heart" /></p>
+
+<p>I created this heart using illustrator around 8 years ago. It took forever. I wanted to see how difficult it would be to create something similar using D3.js. I wanted a technique that allowed me to create a similar effect using any SVG path.</p>
+
+<p>First, I create a grid of SVG circles, and colored them using a scale from color brewer.</p>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">I love how easy it is to generate pretty things with <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a>. <a href="https://t.co/m40mQJHRK6">pic.twitter.com/m40mQJHRK6</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816507173396041728">January 4, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Next, I imported a SVG path and tried to detect whether the center of a circle was inside the path. There’s a way to detect this in d3 for polygons, but I wasn’t able to find a solution for paths. Thankfully, I found a canvas method called isPointInPath that allowed me to do what I wanted.</p>
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Getting closer. Canvas has a handy method for detecting if a point is inside a path. Couldn&#39;t find for SVG: <a href="https://t.co/ckggydyFC6">https://t.co/ckggydyFC6</a><a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/GpBtuDXPcE">pic.twitter.com/GpBtuDXPcE</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/816845636012081152">January 5, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">❤️ Next Step is to get this Mitchell&#39;s best candidate example to fill in an arbitrary path. <a href="https://t.co/cksIDOrpnk">https://t.co/cksIDOrpnk</a> <a href="https://twitter.com/hashtag/d3js?src=hash">#d3js</a> <a href="https://t.co/kjC5aqf3VL">pic.twitter.com/kjC5aqf3VL</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/817048601545146368">January 5, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>This effect was really great on its own. But it’s not what I wanted for this piece. I didn’t want a grid based distribution. I wanted it to look like a human placed the circles, which i why I decided to use an alorithm.</p>
+
+<p>I was really inspired by Mike Bostock’s example of Mitchell’s best candidate. What this algorithm does takes a number of candidates. Plots them randomly, and then chooses the best candidate based on whatever point is farthest from all the others.</p>
+
+<p>Using this algorithm, I was able to get my final result.</p>
+
+<p><img class="fit" src="/blog/assets/img/posts/generative-art/heart.gif" alt="Photo of Heart" /></p>
+
+<p>I’m happy with it, but there are two problems I would love to have solved.</p>
+
+<p>The first being the ability to detect whether or not a point is inside a path using SVG. Canvas is fine, but there are certain things I’d like to do with animations that are harder using canvas.</p>
+
+<p>The second thing would be the ability to prevent circles from escaping the bounds of the path. Right now, i’m only checking the center of the circle to make sure it stays within the path.  There’s probably a way to detect that the perimeter of the path hasn’t escaped but I haven’t found it yet.</p>
+
+<h2 id="explorations">Explorations</h2>
+
+<p>One of the side benefits of working on generative art in D3.js is that you discover new portions of the API. Below i’ve collected some of the things i’ve made this month.</p>
+
+<figure class="px0">
+    <img class="fit" src="/blog/assets/img/posts/generative-art/ring-of-bars.gif" alt="custom arc tweening" />
+  </figure>
+<div class="post-img-description">Example of Custom Arc Tweening.   
+    <a href="http://bl.ocks.org/philipcdavis/dafa2489338f593c526a8f9978f0dee1">Live</a>
+    </div>
+
+<figure class="px0">
+<img class="fit" src="/blog/assets/img/posts/generative-art/circle-tunnel.gif" alt="transitions example" />
+</figure>
+<div class="post-img-description">
+  Example of Using D3.js transitions.
+  <a href="http://bl.ocks.org/philipcdavis/b5224a272556fcb2d0c776b7a247ede4">Live</a>
+</div>
+
+<figure class="px0">
+<img class="fit" src="/blog/assets/img/posts/generative-art/static.gif" alt="generating static example" />
+</figure>
+<div class="post-img-description">Generating Static</div>
+
+<figure class="px0">
+<img class="fit" src="/blog/assets/img/posts/generative-art/moire.jpg" alt="Working with radial lines" />
+</figure>
+<div class="post-img-description">Working with Radial Lines.
+  <a href="http://bl.ocks.org/philipcdavis/2b626bdef4133921615a5e4fbb921e70">Live</a>
+</div>
+
+<p>If you’re interested in learning D3.js, consider enrolling in the full <a href="https://learningd3.com">course</a>. I’d also love to <a href="https://twitter.com/philipcdavis">hear from you</a> about any work you’ve seen or created that has inspired you.</p>
+
+  </div>
+</article>
+
+      <footer class="footer cf">
+  <div class="grid-2">
+    <img class="fit footer-free-lesson" src="/blog/assets/svg/free-lesson.svg" />
+  </div>
+  <div class="grid-4 footer-info">
+    <div class="footer-header">Master D3.js from the ground up</div>
+    <div class="footer-text text-small">
+      If you want to understand the D3 library, and build amazing data visualizations, I made a concise and comprehensive video course to help you learn D3.
+      <br>
+      <br>
+      <b>Sign up below and i’ll send you a free lesson</b>
+    </div>
+      <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//gmail.us12.list-manage.com/subscribe/post?u=f2b5aed612d56a7f603cfb3ec&amp;id=10fc00a98b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          	<!-- <h2 class="text-uppercase text-light text-thin text-center">Join the waiting list</h2> -->
+              <div class="row">
+                <div class="grid-4">
+                  <div class="mc-field-group">
+                  	<input placeholder="Email Address" type="email" style="width: 100%;" value="" name="EMAIL" class="required email input input-white footer-input mb1 p0" id="mce-EMAIL">
+                  </div>
+                </div>
+                <div class="grid-2">
+                  <div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display:none"></div>
+                		<div class="response" id="mce-success-response" style="display:none"></div>
+                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2b5aed612d56a7f603cfb3ec_10fc00a98b" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-green btn-borderless footer-btn btn-bold btn-md mb2"></div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+    </div>
+</footer>
+
+    </div>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74935564-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+
+</html>

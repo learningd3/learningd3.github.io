@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Generative Art with D3.js"
-date:   2017-01-24
+date:   2017-01-23
 header-img: "generative-art/heart.gif"
 image: /assets/img/posts/generative-art/heart.gif
 description: "Generative art is not about communicating information. It's about making visuals with instructions."

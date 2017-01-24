@@ -517,7 +517,7 @@ body {
 
 a {
   color: #267CFF;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 a:hover {
   opacity: .8; }
@@ -925,6 +925,8 @@ hr {
 .post {
   margin-bottom: 100px;
   margin-top: 100px; }
+  .post a {
+    text-decoration: underline; }
 
 .post-list {
   margin-bottom: 60px; }
