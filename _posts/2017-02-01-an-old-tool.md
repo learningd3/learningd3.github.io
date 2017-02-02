@@ -3,7 +3,7 @@ layout: post
 title:  "An Old Tool for Designers"
 header-img: "designers-data-viz.jpg"
 image: /assets/img/posts/designers-data-viz.jpg
-description: "Data visualization is about communicating information effectively. It's way more than bar charts."
+description: "I've used many different design tools. Some have been helpful, many are obsolete."
 ---
 
 5 years ago, I decided to learn D3.js. I was a designer, and didn't have much JavaScript experience. Looking back, it was one of the best career decisions I've made.
@@ -18,7 +18,7 @@ Data visualization has lasting power. It's an old tool.
   </a>
 </div>
 
-Data visualization is challenging because it sits at the intersection of many disciplines. Graphic design is one of these, but so is behavioral psychology, statistics, mathematics. You don’t have to be an expert in all of these disciplines, but you can get exposure to them all.
+Data visualization is challenging because it sits at the intersection of many disciplines. Graphic design is one of these, but so is behavioral psychology, statistics, and mathematics. The reason it's challenging is also a reason it's worth digging into. You get exposure.
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">This beautiful visualization of global weather conditions by <a href="https://twitter.com/cambecc">@cambecc</a> is an all time favorite of mine. <a href="https://t.co/wbpHi6APNa">https://t.co/wbpHi6APNa</a> 🌎 <a href="https://t.co/VCsUDtKRrD">pic.twitter.com/VCsUDtKRrD</a></p>&mdash; Philip Davis (@philipcdavis) <a href="https://twitter.com/philipcdavis/status/826673317067120640">February 1, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
