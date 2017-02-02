@@ -27,6 +27,6 @@ Data visualization is challenging because it sits at the intersection of many di
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I still consider myself a designer, but data visualization is an important creative and technical outlet of mine.
-If you feel like you’ve hit a wall with design, and want to build your skill sets without leaving the industry, data visualization might worth checking out.
+If you feel like you’ve hit a wall with design, and want to build your skill sets without leaving the industry, data visualization is worth checking out.
 
 If you are interested in building data visualizations with D3.js, i’ve built a <a href="https://learningd3.com">course</a> to help you learn it from the ground up. Sign up below and i’ll send you a free lesson.

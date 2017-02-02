@@ -5,8 +5,8 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Feb 2017 00:24:33 -0800</pubDate>
-    <lastBuildDate>Thu, 02 Feb 2017 00:24:33 -0800</lastBuildDate>
+    <pubDate>Thu, 02 Feb 2017 00:26:21 -0800</pubDate>
+    <lastBuildDate>Thu, 02 Feb 2017 00:26:21 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -32,7 +32,7 @@ Data visualization has lasting power. It’s an old tool.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;I still consider myself a designer, but data visualization is an important creative and technical outlet of mine.
-If you feel like you’ve hit a wall with design, and want to build your skill sets without leaving the industry, data visualization might worth checking out.&lt;/p&gt;
+If you feel like you’ve hit a wall with design, and want to build your skill sets without leaving the industry, data visualization is worth checking out.&lt;/p&gt;
 
 &lt;p&gt;If you are interested in building data visualizations with D3.js, i’ve built a &lt;a href=&quot;https://learningd3.com&quot;&gt;course&lt;/a&gt; to help you learn it from the ground up. Sign up below and i’ll send you a free lesson.&lt;/p&gt;
 </description>
