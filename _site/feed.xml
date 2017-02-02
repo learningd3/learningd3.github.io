@@ -5,9 +5,43 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jan 2017 09:11:37 -0800</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2017 09:11:37 -0800</lastBuildDate>
+    <pubDate>Thu, 02 Feb 2017 00:18:17 -0800</pubDate>
+    <lastBuildDate>Thu, 02 Feb 2017 00:18:17 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>An Old Tool for Designers</title>
+        <description>&lt;p&gt;5 years ago, I decided to learn D3.js. I was a designer, and didn’t have much JavaScript experience. Looking back, it was one of the best career decisions I’ve made.&lt;/p&gt;
+
+&lt;p&gt;I’ve used many different design tools. Some have been helpful, many are obsolete.
+Data visualization has lasting power. It’s an old tool.&lt;/p&gt;
+
+&lt;div class=&quot;text-center post-img-description&quot;&gt;
+  &lt;img class=&quot;fit&quot; src=&quot;/blog/assets/img/posts/designers/cholera.jpg&quot; alt=&quot;Cholera Outbreak&quot; /&gt;
+  &lt;a href=&quot;https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak#Investigation_by_John_Snow&quot;&gt;
+    Map of the 1854 Cholera Outbreak, by John Snow
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Data visualization is challenging because it sits at the intersection of many disciplines. Graphic design is one of these, but so is behavioral psychology, statistics, mathematics. You don’t have to be an expert in all of these disciplines, but you can get exposure to them all.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;This beautiful visualization of global weather conditions by &lt;a href=&quot;https://twitter.com/cambecc&quot;&gt;@cambecc&lt;/a&gt; is an all time favorite of mine. &lt;a href=&quot;https://t.co/wbpHi6APNa&quot;&gt;https://t.co/wbpHi6APNa&lt;/a&gt; 🌎 &lt;a href=&quot;https://t.co/VCsUDtKRrD&quot;&gt;pic.twitter.com/VCsUDtKRrD&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/826673317067120640&quot;&gt;February 1, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;If you haven&amp;#39;t seen it yet, check out &lt;a href=&quot;https://twitter.com/datasketches&quot;&gt;@datasketches&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/NadiehBremer&quot;&gt;@NadiehBremer&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/sxywu&quot;&gt;@sxywu&lt;/a&gt;. Some very inspiring work! &lt;br /&gt;&lt;br /&gt;👉 &lt;a href=&quot;https://t.co/nGsrn4D8Xe&quot;&gt;https://t.co/nGsrn4D8Xe&lt;/a&gt; &lt;a href=&quot;https://t.co/iXztqyvu60&quot;&gt;pic.twitter.com/iXztqyvu60&lt;/a&gt;&lt;/p&gt;&amp;mdash; Philip Davis (@philipcdavis) &lt;a href=&quot;https://twitter.com/philipcdavis/status/804520977442844672&quot;&gt;December 2, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;I still consider myself a designer, but data visualization is an important creative and technical outlet of mine.
+If you feel like you’ve hit a wall with design, and want to build your skill sets without leaving the industry, data visualization might worth checking out.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in building data visualizations with D3.js, i’ve built a &lt;a href=&quot;https://learningd3.com&quot;&gt;course&lt;/a&gt; to help you learn it from the ground up. Sign up below and i’ll send you a free lesson.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Feb 2017 00:00:00 -0800</pubDate>
+        <link>https://learningd3.com/blog/an-old-tool/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/an-old-tool/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Creating Generative Art with D3.js</title>
