@@ -5,9 +5,42 @@
     <description>Build data visualizations on your own terms</description>
     <link>https://learningd3.com/blog/</link>
     <atom:link href="https://learningd3.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Feb 2017 12:57:28 -0800</pubDate>
-    <lastBuildDate>Sat, 04 Feb 2017 12:57:28 -0800</lastBuildDate>
+    <pubDate>Wed, 01 Mar 2017 17:42:57 -0800</pubDate>
+    <lastBuildDate>Wed, 01 Mar 2017 17:42:57 -0800</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>What you need to know about D3’s versioning</title>
+        <description>&lt;p&gt;D3 has a version associated with it. Knowing what these numbers mean will help you determine whether or not you can upgrade to a newer version without breaking your project.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-basics-of-semantic-versioning&quot;&gt;The basics of Semantic Versioning&lt;/h2&gt;
+&lt;p&gt;D3 adheres to a convention called &lt;a href=&quot;http://semver.org/&quot;&gt;semantic versioning&lt;/a&gt;. Semantic versioning, or semver for short, consists  of three numbers. The version of D3 that I’m currently using is 4.7.0. Let’s break down each number and what it represents.&lt;/p&gt;
+
+&lt;p&gt;(&lt;strong&gt;4&lt;/strong&gt;.7.0)
+The first number in this chain is called the &lt;em&gt;major&lt;/em&gt; version.&lt;/p&gt;
+
+&lt;p&gt;(4.&lt;strong&gt;7&lt;/strong&gt;.0)
+The second number is called the &lt;em&gt;minor&lt;/em&gt; version.&lt;/p&gt;
+
+&lt;p&gt;(4.7.&lt;strong&gt;0&lt;/strong&gt;)
+The third number is called the &lt;em&gt;patch&lt;/em&gt; version.&lt;/p&gt;
+
+&lt;p&gt;These versions are incremented when code changes are introduced. Depending on the nature of the change, a different number is incremented.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;major version&lt;/strong&gt; (first number) is incremented when changes that break the api are released. Usually, when major versions are released there’s a guide released with how to update from the old version to the new one.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;minor version&lt;/strong&gt; (second number) is incremented when functionality is added that does not break any existing functionality. These changes are referred to as &lt;em&gt;backwards compatible&lt;/em&gt; changes.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;patch version&lt;/strong&gt; (third number) is for backwards compatible &lt;em&gt;bug fixes&lt;/em&gt;. Bug fixes are in contrast here with features (adding functionality). These patches go out when something is wrong with existing functionality or when improvements to existing functionality are implemented.&lt;/p&gt;
+
+&lt;p&gt;If you use libraries that follow semver (like D3!) you should be able to update minor and patch changes without worrying about anything breaking.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 -0800</pubDate>
+        <link>https://learningd3.com/blog/d3-versioning/</link>
+        <guid isPermaLink="true">https://learningd3.com/blog/d3-versioning/</guid>
+        
+        
+      </item>
     
       <item>
         <title>An Old Tool for Designers</title>
