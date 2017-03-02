@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "What you need to know about D3’s versioning"
+title:  "An Introduction to Semantic Versioning"
 header-img: "semantic-versioning.jpg"
 image: /assets/img/posts/semantic-versioning.jpg
 description: "D3 adheres to a convention called semantic versioning"
 ---
-D3 has a version associated with it. Knowing what these numbers mean will help you determine whether or not you can upgrade to a newer version without breaking your project.
 
-## The basics of Semantic Versioning
-D3 adheres to a convention called [semantic versioning](http://semver.org/). Semantic versioning, or semver for short, consists  of three numbers. The version of D3 that I’m currently using is 4.7.0. Let’s break down each number and what it represents.
+D3 adheres to a convention called [semantic versioning](http://semver.org/). Semantic versioning, or semver for short, consists  of three numbers. Knowing what these numbers mean will help you determine whether or not you can upgrade to a newer version without breaking your project. The version of D3 that I’m currently using is 4.7.0. Let’s break down each number and what it represents.
 
 (**4**.7.0)
 The first number in this chain is called the *major* version.
